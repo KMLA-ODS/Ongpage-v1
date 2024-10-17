@@ -46,6 +46,22 @@ const About = () => {
             {/* Contents */}
             <div className="min-h-[70vh] w-full">
               <TabsContent value="organization">
+                {/* triangles */}
+                {/* <Image
+                  src="/images/tri-left.png"
+                  alt="deco"
+                  width={1240}
+                  height={500}
+                  className="absolute left-0 top-[485px]"
+                ></Image>
+                <Image
+                  src="/images/tri-right.png"
+                  alt="deco"
+                  width={1240}
+                  height={500}
+                  className="absolute right-0 top-[555px]"
+                ></Image> */}
+
                 {/* description */}
                 <div className="w-full flex flex-col items-center pt-[77px]">
                   <Image
@@ -76,6 +92,7 @@ const About = () => {
                   <div className="w-[35px] h-[2px] xl:w-[47px] xl:h-[3px] bg-[#D9D9D9] mt-[40px] xl:mt-[54px]"></div>
                 </div>
                 {/* history - 1 */}
+
                 <ul className="relative mt-[60px] ">
                   <li className="relative flex flex-row-reverse">
                     <div class="circle-before"></div>
