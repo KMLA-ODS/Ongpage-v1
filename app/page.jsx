@@ -7,9 +7,9 @@ const Home = () => {
     <section className="h-[10000px]">
       <div className="h-[400px] xl:h-[719px] bg-[url('/images/Home_bg.jpg')] bg-cover bg-center">
         <div className="container mx-auto h-full">
-          <div className="pt-[80px] xl:pt-[246px]">
-            <span className="text-white xl:mb-[29px] font-semibold">2024</span>
-            <h1 className="text-white font-bold text-4xl xl:text-[65px] xl:mb-[22px] xl:leading-tight  ">
+          <div className="pt-[160px] xl:pt-[246px]">
+            <span className="text-white  font-semibold">2024</span>
+            <h1 className="text-white mt-[15px] xl:mt-[19px] font-bold text-4xl mb-[22px] xl:text-[65px] xl:mb-[22px] xl:leading-tight  ">
               민족사관고등학교 <br></br> 옹달샘
             </h1>
             <p className="text-white xl:text-[20px]">
