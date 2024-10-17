@@ -7,3 +7,11 @@
     @apply font-primary;
   }
 }
+
+.line-after::after {
+  @apply absolute content-[''] left-[50%] top-[20px] w-[1px] h-[100%] bg-slate-500;
+}
+
+.circle-after::after {
+  @apply absolute content-[''] z-20 left-[50%] top-[20px] w-[18px] h-[18px] ml-[-10px] bg-white rounded-[50%] border-primary border;
+}
