@@ -24,7 +24,11 @@ const About = () => {
     //   {/* contents */}
     // </section>
     <section className="h-[10000px]">
-      <div className="h-[400px] xl:h-[315px] bg-[url('/images/AboutBanner.jpeg')] bg-cover bg-center"></div>
+      <div className="h-[315px] xl:h-[315px] bg-[url('/images/AboutBanner.jpeg')] bg-cover bg-center">
+        <div className="container h-full flex items-end pl-[12px] pb-[40px] lg:pl-0 lg:pb-0 lg:items-center">
+          <h2 className="text-[40px] font-bold text-white">옹달샘은</h2>
+        </div>
+      </div>
       <div className="min-h-[80vh] flex items-center justify-center relative">
         <div className="container mx-auto absolute top-[-25px]">
           <Tabs
@@ -91,12 +95,12 @@ const About = () => {
                   <li className="relative flex flex-row-reverse">
                     <div class="circle-before"></div>
                     <dl className="relative w-[100%] lg:w-[50%] pl-[44px] lg:pl-[70px]">
-                      <dt className="text-[40px] font-bold text-primary">
+                      <dt className="text-[30px] xl:text-[40px] font-bold text-primary">
                         2024
                       </dt>
                       <dd>
                         <ul className="mt-[20px]">
-                          <li className="relative pl-[30px]">
+                          <li className="relative pl-[30px] ">
                             <span className="absolute top-0 left-0 font-bold">
                               8
                             </span>
@@ -113,15 +117,15 @@ const About = () => {
                     </dl>
                     <div class="circle-after"></div>
                   </li>
-                  <li className="relative flex flex-row-reverse mt-[40px]">
+                  <li className="relative flex flex-row-reverse mt-[25px] xl:mt-[40px]">
                     <div class="circle-before"></div>
 
                     <dl className="relative w-[100%] lg:w-[50%] pl-[44px] lg:pl-[70px]">
-                      <dt className="text-[40px] font-bold text-primary">
+                      <dt className="text-[30px] xl:text-[40px] font-bold text-primary">
                         2023
                       </dt>
                       <dd>
-                        <ul className="mt-[20px]">
+                        <ul className="mt-[20px] ">
                           <li className="relative pl-[30px]">
                             <span className="absolute top-0 left-0 font-bold">
                               8
@@ -139,15 +143,15 @@ const About = () => {
                     </dl>
                     <div class="circle-after"></div>
                   </li>
-                  <li className="relative flex flex-row-reverse mt-[40px]">
+                  <li className="relative flex flex-row-reverse mt-[25px] xl:mt-[40px]">
                     <div class="circle-before"></div>
 
                     <dl className="relative w-[100%] lg:w-[50%] pl-[44px] lg:pl-[70px]">
-                      <dt className="text-[40px] font-bold text-primary">
+                      <dt className="text-[30px] xl:text-[40px] font-bold text-primary">
                         2017
                       </dt>
                       <dd>
-                        <ul className="mt-[20px]">
+                        <ul className="mt-[20px] ">
                           <li className="relative pl-[30px]">
                             <span className="absolute top-0 left-0 font-bold">
                               8
@@ -165,11 +169,11 @@ const About = () => {
                     </dl>
                     <div class="circle-after"></div>
                   </li>
-                  <li className="relative flex flex-row-reverse mt-[40px]">
+                  <li className="relative flex flex-row-reverse mt-[25px] xl:mt-[40px]">
                     <div class="circle-before"></div>
 
                     <dl className="relative w-[100%] lg:w-[50%] pl-[44px] lg:pl-[70px]">
-                      <dt className="text-[40px] font-bold text-primary">
+                      <dt className="text-[30px] xl:text-[40px] font-bold text-primary">
                         2014
                       </dt>
                       <dd>
@@ -201,7 +205,7 @@ const About = () => {
                     라오스, 베트남, 캄보디아 등<br></br> 다양한 국가에서
                     봉사활동을 전개합니다.
                   </h2>
-                  <p className="font-light text-gray-500 text-[13px] mt-2 text-left xl:text-left xl:text-[16px] xl:font-normal">
+                  <p className="font-light text-gray-500 text-[14px] mt-2 text-left xl:text-left xl:text-[16px] xl:font-normal">
                     2023년, 코로나 19 팬데믹 이후 라오스 방비엥 마을에서{" "}
                     <br></br>
                     멤브레인 정수기 설치와 위생교육을 실시했습니다.<br></br>{" "}

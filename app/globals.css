@@ -13,9 +13,9 @@
 }
 
 .circle-after::after {
-  @apply absolute content-[''] z-20 left-5 lg:left-[50%] top-[20px] w-[18px] h-[18px] ml-[-9px] bg-white rounded-[50%] border-primary border;
+  @apply absolute content-[''] z-20 left-[20px] lg:left-[50%] top-[14px] lg:top-[20px] w-[18px] h-[18px] ml-[-9px] bg-white rounded-[50%] border-primary border;
 }
 
 .circle-before::before {
-  @apply absolute left-5 lg:left-[50%] top-[27px] content-[''] z-30 w-[4px] h-[4px] ml-[-2px] bg-primary rounded-[50%];
+  @apply absolute left-5 lg:left-[50%] top-[21px] lg:top-[27px] content-[''] z-30 w-[4px] h-[4px] ml-[-2px] bg-primary rounded-[50%];
 }

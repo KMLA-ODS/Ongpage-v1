@@ -35,7 +35,7 @@ export function ScrollAreaHorizontalDemo() {
       <div className="flex w-max space-x-4 p-4">
         {works.map((artwork) => (
           <figure key={artwork.artist} className="">
-            <div className="rounded-md overflow-hidden w-[244px] h-[150px] xl:w-[488px] xl:h-[300px] ">
+            <div className="rounded-md overflow-hidden w-[300px] h-[300px] xl:w-[488px] xl:h-[300px] ">
               <Image
                 src={artwork.art}
                 alt={`Photo by ${artwork.artist}`}
