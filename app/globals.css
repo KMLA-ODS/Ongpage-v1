@@ -9,9 +9,13 @@
 }
 
 .line-after::after {
-  @apply absolute content-[''] left-[50%] top-[20px] w-[1px] h-[100%] bg-slate-500;
+  @apply absolute content-[''] left-5 lg:left-[50%] top-[20px] w-[1px] h-[100%] bg-slate-500;
 }
 
 .circle-after::after {
-  @apply absolute content-[''] z-20 left-[50%] top-[20px] w-[18px] h-[18px] ml-[-10px] bg-white rounded-[50%] border-primary border;
+  @apply absolute content-[''] z-20 left-5 lg:left-[50%] top-[20px] w-[18px] h-[18px] ml-[-9px] bg-white rounded-[50%] border-primary border;
+}
+
+.circle-before::before {
+  @apply absolute left-5 lg:left-[50%] top-[27px] content-[''] z-30 w-[4px] h-[4px] ml-[-2px] bg-primary rounded-[50%];
 }

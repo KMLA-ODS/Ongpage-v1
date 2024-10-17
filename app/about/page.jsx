@@ -54,7 +54,7 @@ const About = () => {
                     width={24}
                     height={24}
                   ></Image>
-                  <h2 className="text-[23px] font-bold xl:text-[30px] my-[23px]">
+                  <h2 className="text-[20px] font-bold xl:text-[30px] my-[23px]">
                     가장 필요한 곳에 현지에 알맞은 방법으로.
                   </h2>
                   <Image
@@ -78,7 +78,8 @@ const About = () => {
                 {/* history - 1 */}
                 <ul className="relative mt-[60px] ">
                   <li className="relative flex flex-row-reverse">
-                    <dl className="relative w-[50%] pl-[70px]">
+                    <div class="circle-before"></div>
+                    <dl className="relative w-[100%] lg:w-[50%] pl-[44px] lg:pl-[70px]">
                       <dt className="text-[40px] font-bold text-primary">
                         2024
                       </dt>
@@ -102,7 +103,9 @@ const About = () => {
                     <div class="circle-after"></div>
                   </li>
                   <li className="relative flex flex-row-reverse mt-[40px]">
-                    <dl className="relative w-[50%] pl-[70px]">
+                    <div class="circle-before"></div>
+
+                    <dl className="relative w-[100%] lg:w-[50%] pl-[44px] lg:pl-[70px]">
                       <dt className="text-[40px] font-bold text-primary">
                         2023
                       </dt>
@@ -126,7 +129,9 @@ const About = () => {
                     <div class="circle-after"></div>
                   </li>
                   <li className="relative flex flex-row-reverse mt-[40px]">
-                    <dl className="relative w-[50%] pl-[70px]">
+                    <div class="circle-before"></div>
+
+                    <dl className="relative w-[100%] lg:w-[50%] pl-[44px] lg:pl-[70px]">
                       <dt className="text-[40px] font-bold text-primary">
                         2017
                       </dt>
@@ -150,7 +155,9 @@ const About = () => {
                     <div class="circle-after"></div>
                   </li>
                   <li className="relative flex flex-row-reverse mt-[40px]">
-                    <dl className="relative w-[50%] pl-[70px]">
+                    <div class="circle-before"></div>
+
+                    <dl className="relative w-[100%] lg:w-[50%] pl-[44px] lg:pl-[70px]">
                       <dt className="text-[40px] font-bold text-primary">
                         2014
                       </dt>
