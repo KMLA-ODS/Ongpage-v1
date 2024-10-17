@@ -4,15 +4,19 @@ import CountUp from "react-countup";
 const stats = [
   {
     num: 10,
-    text: "년",
+    text: "Years of experience",
   },
   {
     num: 146,
-    text: "시간",
+    text: "hours per year",
   },
   {
     num: 400,
-    text: "명",
+    text: "children",
+  },
+  {
+    num: 45,
+    text: "alumni",
   },
 ];
 

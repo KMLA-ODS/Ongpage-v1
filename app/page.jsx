@@ -25,7 +25,7 @@ const Home = () => {
           <div>photo</div>
         </div>
       </div>
-      {/* <Stats></Stats> */}
+      <Stats></Stats>
     </section>
   );
 };

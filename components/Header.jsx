@@ -8,7 +8,7 @@ import { MobileNav } from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="py-2 lg:py-8 xl:py-10 text-white bg-transparent fixed w-[100%]">
+    <header className="py-2 lg:py-8 xl:py-10 text-white bg-transparent fixed w-[100%] z-10">
       <div className="container mx-auto flex justify-between items-center">
         {/* logo */}
         <div className="flex items-center gap-4">
@@ -31,7 +31,9 @@ const Header = () => {
         <div className="hidden xl:flex items-center gap-8">
           <Nav></Nav>
           <Link href={"/donation"}>
-            <Button>후원하기</Button>
+            <Button className="bg-[#5CA45E] rounded-[5px] text-[15px] font-medium">
+              후원하기
+            </Button>
           </Link>
         </div>
 
