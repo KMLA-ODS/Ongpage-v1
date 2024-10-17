@@ -9,15 +9,9 @@ import {
   TabsTrigger,
 } from "../../components/ui/tabs";
 
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "../../components/ui/tooltip";
-
-import { ScrollArea } from "@radix-ui/react-scroll-area";
+import { ScrollArea, ScrollBar } from "@radix-ui/react-scroll-area";
 import { motion } from "framer-motion";
+import { ScrollAreaHorizontalDemo } from "../../components/ScrollAreaHorizontalDemo"; // 경로에 따라 맞게 변경
 
 const About = () => {
   return (
@@ -202,6 +196,19 @@ const About = () => {
                 </ul>
 
                 {/* history - 2 */}
+                <div className="mt-[80px] xl:mt-[100px] xl:mb-[40px]">
+                  <h2 className="font-bold text-[18px] text-left xl:text-left xl:text-[35px]">
+                    라오스, 베트남, 캄보디아 등<br></br> 다양한 국가에서
+                    봉사활동을 전개합니다.
+                  </h2>
+                  <p className="font-light text-gray-500 text-[13px] mt-2 text-left xl:text-left xl:text-[16px] xl:font-normal">
+                    2023년, 코로나 19 팬데믹 이후 라오스 방비엥 마을에서{" "}
+                    <br></br>
+                    멤브레인 정수기 설치와 위생교육을 실시했습니다.<br></br>{" "}
+                    옹달샘은 지속 가능한 발전을 위해 꾸준한 유지보수하는중
+                  </p>
+                </div>
+                <ScrollAreaHorizontalDemo></ScrollAreaHorizontalDemo>
 
                 {/* activities */}
               </TabsContent>
