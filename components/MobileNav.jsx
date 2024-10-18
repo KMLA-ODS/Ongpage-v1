@@ -2,10 +2,17 @@
 
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { usePathname } from "next/navigation";
+import { Button } from "./ui/button";
+
+import Image from "next/image";
 import Link from "next/link";
 import { CiMenuBurger } from "react-icons/ci";
 
 const links = [
+  {
+    name: "홈",
+    path: "/",
+  },
   {
     name: "소개",
     path: "/about",
@@ -36,7 +43,25 @@ export const MobileNav = () => {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         {/* logo */}
-        <div className="mt-32 mb-40">logo</div>
+        <Link href={"/"}>
+          <Image
+            src="/images/logo blue.svg"
+            alt="ongdalsam"
+            width={66.94}
+            height={64}
+            className="mt-24"
+          ></Image>
+        </Link>
+        <div className=" mb-4 text-[25px] font-bold">
+          <h1>
+            민족사관고등학교 <br></br>{" "}
+            <span className="text-primary">옹달샘</span>
+          </h1>
+        </div>
+
+        <Button className="bg-[#5CA45E] rounded-[5px] text-[15px] font-medium mb-8">
+          후원하기
+        </Button>
 
         {/* nav */}
         <nav className="flex flex-col justify-center items-left gap-8">
@@ -45,7 +70,7 @@ export const MobileNav = () => {
               <Link
                 href={link.path}
                 key={index}
-                className="text-xl capitalize hover:text-primary transition-all"
+                className="text-[18px] font-medium capitalize hover:text-primary transition-all"
               >
                 {link.name}
               </Link>
