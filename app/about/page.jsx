@@ -69,11 +69,11 @@ const About = () => {
                     width={24}
                     height={24}
                   ></Image>
-                  <p className="text-[15px] xl:text-[20px] text-center mt-[54px]">
-                    옹달샘는 2014년 설립되어 안녕하세요 저는 박강현 입니다
-                    텍스트 채우고 있어요<br></br>깨끗한 식수를 필요로 하는
-                    개발도상국 아동과 주민들을 위해식수 공급 및 위생교육 사업과
-                    진행하는 중이죠<br></br>저희는 바로 짜잔 쿵 띠리리{" "}
+                  <p className=" xl:text-[20px] text-center mt-[54px]">
+                    2014년 설립된 옹달샘은
+                    <br className="xl:hidden"></br> 깨끗한 식수를 필요로 하는
+                    개발도상국 아동과 마을을 <br></br> 위해 식수 공급 및
+                    위생교육 사업과 진행하는 <br className="xl:hidden"></br>
                     <span className="font-semibold text-primary">
                       적정기술 해외봉사 동아리
                     </span>
@@ -211,10 +211,10 @@ const About = () => {
 
               <TabsContent value="values">
                 <div className="w-full flex flex-col items-center">
-                  <h2 className="pt-7 font-bold text-[20px] xl:text-[30px] xl:pt-10">
+                  <h2 className="pt-16 font-bold text-[20px] xl:text-[30px] xl:pt-10">
                     옹달샘의 정신
                   </h2>
-                  <p className="text-center py-4 xl:text-[18px] xl:pt-4 xl:pb-10">
+                  <p className="text-center pt-4 pb-8 xl:text-[18px] xl:pt-4 xl:pb-10">
                     개발도상국 아이들을 위해 힘차게 달려온 10년<br></br> 더욱
                     발전하는 옹달샘이 되겠습니다
                   </p>
@@ -238,7 +238,7 @@ const About = () => {
                       </span>
                     </div>
                   </div>
-                  <h2 className="pt-7 pb-4 font-bold text-[20px] xl:text-[30px] xl:pt-14 xl:pb-8">
+                  <h2 className="pt-16 pb-8 font-bold text-[20px] xl:text-[30px] xl:pt-14 xl:pb-8">
                     옹달샘의 핵심가치
                   </h2>
                   <div className="w-full flex flex-col xl:flex-row items-center justify-center gap-6 xl:gap-16">
@@ -301,7 +301,7 @@ const About = () => {
                       신나는 옹달샘 이야기<br></br>
                       <span className="font-normal">노는게 제일 좋아요</span>
                     </h2>
-                    <p className="text-[15px] xl:text-[17px] text-gray-600 mb-6">
+                    <p className=" xl:text-[17px] text-gray-600 mb-6">
                       안녕하세요, 옹달샘 28기 장 이지아입니다.<br></br> 우리
                       옹달샘은 지난 10년 동안 지켜온 아동권리의 가치와 원칙을
                       바탕으로 더 많은 아이들을 구하기 위해 새롭게
@@ -325,7 +325,7 @@ const About = () => {
                       전합니다. 우리가 아이를 구하면 아이가 세상을 구한다는
                       믿음으로, 변함없는 관심과 지원을 부탁드립니다.
                     </p>
-                    <h3 className="text-gray xl:text-[17px]">
+                    <h3 className="text-gray text-[17px] xl:text-[18px]">
                       옹달샘 28기 장 <span className="font-bold">이지아</span>
                     </h3>
                   </div>
@@ -345,7 +345,7 @@ const About = () => {
                       신나는 옹달샘 이야기<br></br>
                       <span className="font-normal">노는게 제일 좋아요</span>
                     </h2>
-                    <p className="text-[15px] xl:text-[17px] text-gray-600 mb-6">
+                    <p className=" xl:text-[17px] text-gray-600 mb-6">
                       안녕하세요, 옹달샘 28기 차장 추연수입니다.<br></br> 우리
                       옹달샘은 지난 10년 동안 지켜온 아동권리의 가치와 원칙을
                       바탕으로 더 많은 아이들을 구하기 위해 새롭게
@@ -369,7 +369,7 @@ const About = () => {
                       전합니다. 우리가 아이를 구하면 아이가 세상을 구한다는
                       믿음으로, 변함없는 관심과 지원을 부탁드립니다.
                     </p>
-                    <h3 className="text-gray xl:text-[17px]">
+                    <h3 className="text-gray text-[17px] xl:text-[18px]">
                       옹달샘 28기 차장 <span className="font-bold">추연수</span>
                     </h3>
                   </div>
