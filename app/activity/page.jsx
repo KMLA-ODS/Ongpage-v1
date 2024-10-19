@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import {
   Tabs,
@@ -10,6 +11,39 @@ import {
 } from "../../components/ui/tabs";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { image } from "framer-motion/client";
+
+const projects = [
+  {
+    num: "01",
+    title: "문화교류",
+    description:
+      "더미텍스트 감사원의 조직·직무범위·감사위원의 자격·감사대상공무원의 범위 기타 필요한 사항은 법률로 정한다. 헌법재판소 재판관의 임기는 6년으로 하며, 법률",
+    image: "/images/taekwondo.jpeg",
+  },
+  {
+    num: "02",
+    title: "교육봉사",
+    description:
+      "더미텍스트 감사원의 조직·직무범위·감사위원의 자격·감사대상공무원의 범위 기타 필요한 사항은 법률로 정한다. 헌법재판소 재판관의 임기는 6년으로 하며, 법률",
+    image: "/images/education.jpeg",
+  },
+  {
+    num: "03",
+    title: "노력봉사",
+    description:
+      "더미텍스트 감사원의 조직·직무범위·감사위원의 자격·감사대상공무원의 범위 기타 필요한 사항은 법률로 정한다. 헌법재판소 재판관의 임기는 6년으로 하며, 법률",
+    image: "/images/volunteering.jpeg",
+  },
+  {
+    num: "04",
+    title: "정수기 설치",
+    description:
+      "더미텍스트 감사원의 조직·직무범위·감사위원의 자격·감사대상공무원의 범위 기타 필요한 사항은 법률로 정한다. 헌법재판소 재판관의 임기는 6년으로 하며, 법률",
+    image: "/images/volunteering.jpeg",
+  },
+];
 
 const Activity = () => {
   return (
