@@ -43,25 +43,19 @@ export const MobileNav = () => {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         {/* logo */}
-        <Link href={"/"}>
-          <Image
-            src="/images/logo blue.svg"
-            alt="ongdalsam"
-            width={66.94}
-            height={64}
-            className="mt-24"
-          ></Image>
-        </Link>
-        <div className=" mb-4 text-[25px] font-bold">
+
+        <div className=" mt-[40px] mb-4 text-[25px] font-bold">
           <h1>
             민족사관고등학교 <br></br>{" "}
             <span className="text-primary">옹달샘</span>
           </h1>
         </div>
 
-        <Button className="bg-[#5CA45E] rounded-[5px] text-[15px] font-medium mb-8">
-          후원하기
-        </Button>
+        <Link href={"/donation"}>
+          <Button className="bg-[#5CA45E] rounded-[5px] text-[15px] font-medium mb-8 w-full">
+            후원하기
+          </Button>
+        </Link>
 
         {/* nav */}
         <nav className="flex flex-col justify-center items-left gap-8">
