@@ -45,72 +45,98 @@ const SwiperComponent = () => {
       >
         <SwiperSlide>
           <div className="w-full h-[335px] object-cover">
-            <Image
-              src="/images/Story1.jpg"
-              alt="ongdalsam story 1 "
-              width={1080}
-              height={1080}
-            ></Image>
+            <a href="https://www.instagram.com/p/DBVqxdSzvDU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+              <Image
+                src="/images/Story0.jpg"
+                alt="ongdalsam story 0 "
+                width={1080}
+                height={1080}
+              ></Image>
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-full h-[335px] object-cover">
-            <Image
-              src="/images/Story2.jpg"
-              alt="ongdalsam story 2 "
-              width={1080}
-              height={1080}
-            ></Image>
+            <a href="https://www.instagram.com/p/C99F5w3BJ20/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+              <Image
+                src="/images/Story1.jpg"
+                alt="ongdalsam story 1 "
+                width={1080}
+                height={1080}
+              ></Image>
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-full h-[335px] object-cover">
-            <Image
-              src="/images/Story3.jpg"
-              alt="ongdalsam story 3 "
-              width={1080}
-              height={1080}
-            ></Image>
+            <a href="https://www.instagram.com/p/C99D2Vuhmc2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+              <Image
+                src="/images/Story2.jpg"
+                alt="ongdalsam story 2 "
+                width={1080}
+                height={1080}
+              ></Image>
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-full h-[335px] object-cover">
-            <Image
-              src="/images/Story4.jpg"
-              alt="ongdalsam story 4 "
-              width={1080}
-              height={1080}
-            ></Image>
+            <a href="https://www.instagram.com/p/C9we_zOBqW8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+              <Image
+                src="/images/Story3.jpg"
+                alt="ongdalsam story 3 "
+                width={1080}
+                height={1080}
+              ></Image>
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-full h-[335px] object-cover">
-            <Image
-              src="/images/Story5.jpg"
-              alt="ongdalsam story 5 "
-              width={1080}
-              height={1080}
-            ></Image>
+            <a href="https://www.instagram.com/p/Ck2-X5yBVom/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+              <Image
+                src="/images/Story4.jpg"
+                alt="ongdalsam story 4 "
+                width={1080}
+                height={1080}
+              ></Image>
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-full h-[335px] object-cover">
-            <Image
-              src="/images/Story6.jpg"
-              alt="ongdalsam story 6 "
-              width={1080}
-              height={1080}
-            ></Image>
+            <a href="https://www.instagram.com/p/C9skQSDzUuv/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+              <Image
+                src="/images/Story5.jpg"
+                alt="ongdalsam story 5 "
+                width={1080}
+                height={1080}
+              ></Image>
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-full h-[335px] object-cover">
-            <Image
-              src="/images/Story7.jpg"
-              alt="ongdalsam story 7 "
-              width={1080}
-              height={1080}
-            ></Image>
+            <a href="https://www.instagram.com/p/C9skcPdTEV0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+              <Image
+                src="/images/Story6.jpg"
+                alt="ongdalsam story 6 "
+                width={1080}
+                height={1080}
+              ></Image>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full h-[335px] object-cover">
+            <a href="https://www.instagram.com/p/Ch6_UOSJJ3m/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+              <Image
+                src="/images/Story7.jpg"
+                alt="ongdalsam story 7 "
+                width={1080}
+                height={1080}
+              ></Image>
+            </a>
           </div>
         </SwiperSlide>
 
