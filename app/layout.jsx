@@ -5,6 +5,7 @@ import "./globals.css";
 //components
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 const pretendard = localFont({
   src: "./fonts/PretendardVariable.woff2",
@@ -39,6 +40,8 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <body className={pretendard.variable}>
+        <ScrollToTopButton />
+
         <Header />
         {children}
         {/* <Footer></Footer> */}

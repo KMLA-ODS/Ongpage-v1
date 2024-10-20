@@ -11,9 +11,9 @@ const Home = () => {
     <section className="">
       {/* banner */}
 
-      <div className="h-[400px] xl:h-[719px] bg-[url('/images/Home_bg.jpg')] bg-cover bg-center">
+      <div className="h-[350px] xl:h-[620px] bg-[url('/images/Home_bg.jpg')] bg-cover bg-center">
         <div className="container mx-auto h-full">
-          <div className="pt-[160px] xl:pt-[246px]">
+          <div className="pt-[130px] xl:pt-[220px]">
             <span className="text-white  font-semibold">2024</span>
             <h1 className="text-white mt-[15px] xl:mt-[19px] font-bold text-4xl mb-[22px] xl:text-[65px] xl:mb-[22px] xl:leading-tight  ">
               민족사관고등학교 <br></br> 옹달샘
@@ -28,7 +28,7 @@ const Home = () => {
       <div className="container mx-auto h-full">
         {/* introduction */}
 
-        <div className="mt-[40px] mb-[20px] xl:mt-[100px] xl:mb-[40px] w-full">
+        <div className="mt-[40px] mb-[20px] xl:mt-[80px] xl:mb-[40px] w-full">
           <h2 className="font-bold text-[24px] text-left xl:text-left xl:text-[35px]">
             옹달샘의 특별한 <span className="text-primary">봉사이야기</span>
           </h2>
