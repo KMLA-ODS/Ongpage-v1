@@ -4,6 +4,7 @@ import "./globals.css";
 
 //components
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const pretendard = localFont({
   src: "./fonts/PretendardVariable.woff2",
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
       <body className={pretendard.variable}>
         <Header />
         {children}
+        {/* <Footer></Footer> */}
       </body>
     </html>
   );

@@ -8,6 +8,10 @@
   }
 }
 
+body {
+  position: relative;
+}
+
 .line-after::after {
   @apply absolute content-[''] left-5 lg:left-[50%] top-[20px] w-[1px] h-[100%] bg-slate-500;
 }

@@ -8,7 +8,7 @@ import SwiperComponent from "../components/Swiper";
 
 const Home = () => {
   return (
-    <section className="h-[10000px]">
+    <section className="">
       {/* banner */}
 
       <div className="h-[400px] xl:h-[719px] bg-[url('/images/Home_bg.jpg')] bg-cover bg-center">
