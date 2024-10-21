@@ -86,7 +86,10 @@ export function Members() {
   return (
     <div className="w-full">
       {members.map((wave, index) => (
-        <div key={index} className="mb-8">
+        <div
+          key={index}
+          className={`${index !== members.length - 1 ? "mb-8" : ""}`}
+        >
           {/* Wave Title */}
           <h2 className="text-left font-bold text-[20px]  xl:text-[25px] ml-4 mb-[37px]">
             {wave.wave}

@@ -47,19 +47,19 @@ const projects = [
 
 const Activity = () => {
   return (
-    <section className="h-[10000px]">
+    <section className="">
       <div className="h-[295px] xl:h-[315px] bg-[url('/images/ActivityBanner.jpg')] bg-cover bg-center">
         <div className="container h-full flex items-end pl-[12px] pb-[40px] lg:pl-0 lg:pb-0 lg:items-center">
           <h2 className="text-[40px] font-bold text-white">활동소개</h2>
         </div>
       </div>
       <div className="min-h-[80vh] flex items-center justify-center relative">
-        <div className="container mx-auto absolute top-[-25px]">
+        <div className="container mx-auto">
           <Tabs
             defaultValue="volunteering"
-            className="w-full flex flex-col items-center"
+            className="w-full flex flex-col items-center relative"
           >
-            <TabsList>
+            <TabsList className="absolute top-[-65px]">
               <TabsTrigger value="volunteering">해외봉사</TabsTrigger>
               <TabsTrigger value="technology">기술개발</TabsTrigger>
               <TabsTrigger value="fundraising">모금사업</TabsTrigger>
@@ -70,7 +70,7 @@ const Activity = () => {
               <TabsContent value="volunteering">
                 {/* photos & description */}
 
-                <div className="mt-[40px] xl:mt-[100px] xl:mb-[40px]">
+                <div className="mt-[40px] xl:mt-[60px] xl:mb-[40px]">
                   <h2 className="font-bold text-[18px] text-left xl:text-left xl:text-[35px]">
                     매년 옹달샘은 <span className="text-primary">현장으로</span>{" "}
                     나섭니다.

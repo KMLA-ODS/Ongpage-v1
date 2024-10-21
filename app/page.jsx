@@ -11,7 +11,7 @@ import ActivitySwiper from "../components/ActivitySwiper";
 
 const Home = () => {
   return (
-    <section className="h-[5000px]">
+    <section className="mb-16 xl:mb-36">
       {/* banner */}
 
       <div className="h-[390px] xl:h-[620px] bg-[url('/images/Home_bg.jpg')] bg-cover bg-center">

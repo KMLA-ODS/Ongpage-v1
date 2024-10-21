@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaGithub, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="container mx-auto h-auto my-4 xl:my-12  border-t-2 border-[#3B3B3B]">
+    <div className="container mx-auto h-auto mb-4 xl:mb-12  border-t-2 border-[#3B3B3B]">
       {/* Links section */}
       <div className="mt-6 xl:mt-8 text-center xl:text-left flex justify-start gap-4">
         <a className="font-bold text-[15px] xl:text-[16px]">자주하는 질문</a>

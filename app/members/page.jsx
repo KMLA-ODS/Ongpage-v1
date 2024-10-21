@@ -7,7 +7,7 @@ import Members from "../../components/Members";
 
 const Member = () => {
   return (
-    <section className="h-[10000px]">
+    <section className="">
       <div className="h-[295px] xl:h-[315px] bg-[url('/images/membersBanner.jpg')] bg-cover bg-center">
         <div className="container h-full flex items-end pl-[12px] pb-[40px] lg:pl-0 lg:pb-0 lg:items-center">
           <h2 className="text-[40px] font-bold text-white">부원 소개</h2>

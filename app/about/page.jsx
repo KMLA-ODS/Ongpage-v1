@@ -13,19 +13,19 @@ import { ScrollAreaHorizontalDemo } from "../../components/ScrollAreaHorizontalD
 
 const About = () => {
   return (
-    <section className="h-[4000px]">
+    <section className="mb-12 xl:mb-16">
       <div className="h-[295px] xl:h-[315px] bg-[url('/images/AboutBanner.jpeg')] bg-cover bg-center">
         <div className="container h-full flex items-end pl-[12px] pb-[40px] lg:pl-0 lg:pb-0 lg:items-center">
           <h2 className="text-[40px] font-bold text-white">옹달샘은</h2>
         </div>
       </div>
-      <div className="min-h-[80vh] flex items-center justify-center relative">
-        <div className="container mx-auto absolute top-[-25px]">
+      <div className="flex items-center justify-center relative">
+        <div className="container mx-auto ">
           <Tabs
             defaultValue="organization"
-            className="w-full flex flex-col items-center"
+            className="w-full flex flex-col items-center relative"
           >
-            <TabsList>
+            <TabsList className="absolute top-[-25px]">
               <TabsTrigger value="organization">기관소개</TabsTrigger>
               <TabsTrigger value="values">핵심가치</TabsTrigger>
               <TabsTrigger value="greeting">인사말</TabsTrigger>
@@ -35,7 +35,7 @@ const About = () => {
             <div className="min-h-[70vh] w-full">
               <TabsContent value="organization">
                 {/* description */}
-                <div className="w-full flex flex-col items-center pt-[77px]">
+                <div className="w-full flex flex-col items-center pt-[97px]">
                   <Image
                     src="/images/ddaomdown.svg"
                     alt="ongdalsam"
@@ -287,7 +287,7 @@ const About = () => {
 
               <TabsContent value="values">
                 <div className="w-full flex flex-col items-center">
-                  <h2 className="pt-16 font-bold text-[20px] xl:text-[30px] xl:pt-10">
+                  <h2 className="pt-[89px] font-bold text-[20px] xl:text-[30px] xl:pt-[65px]">
                     옹달샘의 정신
                   </h2>
                   <p className="text-center pt-4 pb-8 xl:text-[18px] xl:pt-4 xl:pb-10">
@@ -387,7 +387,7 @@ const About = () => {
               </TabsContent>
 
               <TabsContent value="greeting">
-                <div className="w-full flex flex-col-reverse xl:flex-row  pt-[20px] xl:pt-[40px] justify-between">
+                <div className="w-full flex flex-col-reverse xl:flex-row  pt-[45px] xl:pt-[65px] justify-between">
                   <div className="text-left mt-4 xl:w-[50%] xl:pr-8">
                     <h2 className="font-bold text-[18px] mb-8 xl:text-[25px] ">
                       신나는 옹달샘 이야기<br></br>

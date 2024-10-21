@@ -24,7 +24,7 @@ const info = [
 
 const Contact = () => {
   return (
-    <section>
+    <section className="mb-16">
       {/* Banner Section */}
       <div className="h-[295px] xl:h-[315px] bg-[url('/images/ContactBanner.jpeg')] bg-cover bg-center">
         <div className="container h-full flex items-end pl-[12px] pb-[40px] lg:pl-0 lg:pb-0 lg:items-center">
