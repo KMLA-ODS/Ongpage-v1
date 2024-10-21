@@ -92,8 +92,8 @@ const ActivitySwiper = () => {
               );
             })}
             <ActSliderButton
-              containerStyles="flex gap-2 absolute right-0 bottom-[calc(45%)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
-              btnStyles="bg-gray-800 bg-opacity-50 xl:bg-primary text-white text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+              containerStyles="flex gap-2 absolute right-0 bottom-0 z-20 w-full justify-end xl:w-max xl:justify-none"
+              btnStyles=" bg-primary text-white text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
             />
           </Swiper>
         </div>

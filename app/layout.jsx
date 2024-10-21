@@ -36,6 +36,7 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="민족사관고등학교 옹달샘" />
         <meta property="og:description" content="적정기술 해외봉사 동아리" />
+        <meta property="og:image" content="/images/Home_bg.jpg" />
         <meta property="og:url" content="https://ongdalsam.store" />
         <meta property="og:locale" content="ko_KR" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

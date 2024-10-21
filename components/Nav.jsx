@@ -18,7 +18,7 @@ const links = [
   },
   {
     name: "기술",
-    path: "/technology",
+    path: "/activity",
   },
   {
     name: "구성원",
