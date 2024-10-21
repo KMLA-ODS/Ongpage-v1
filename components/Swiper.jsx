@@ -7,6 +7,41 @@ import "swiper/css/pagination";
 
 import Image from "next/image";
 
+const slides = [
+  {
+    image: "/images/Story0.jpg",
+    link: "https://www.instagram.com/p/DBVqxdSzvDU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: "/images/Story1.jpg",
+    link: "https://www.instagram.com/p/C99F5w3BJ20/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: "/images/Story2.jpg",
+    link: "https://www.instagram.com/p/C99D2Vuhmc2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: "/images/Story3.jpg",
+    link: "https://www.instagram.com/p/C9we_zOBqW8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: "/images/Story4.jpg",
+    link: "https://www.instagram.com/p/Ck2-X5yBVom/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: "/images/Story5.jpg",
+    link: "https://www.instagram.com/p/C9skQSDzUuv/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: "/images/Story6.jpg",
+    link: "https://www.instagram.com/p/C9skcPdTEV0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    image: "/images/Story7.jpg",
+    link: "https://www.instagram.com/p/Ch6_UOSJJ3m/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+];
+
 const SwiperComponent = () => {
   return (
     <div className="relative">
@@ -16,7 +51,7 @@ const SwiperComponent = () => {
         slidesPerView={1.2} // 한 번에 1.2개의 슬라이드가 보이게 설정
         modules={[Navigation, Autoplay]}
         autoplay={{
-          delay: 4000, // 4초마다 전환
+          delay: 3000, // 4초마다 전환
           disableOnInteraction: false, // 상호작용해도 자동재생 유지
         }}
         loop={true}
@@ -40,32 +75,25 @@ const SwiperComponent = () => {
         }}
         className="relative h-[335px]" // 슬라이드 높이 줄임
       >
-        {[
-          "/images/Story0.jpg",
-          "/images/Story1.jpg",
-          "/images/Story2.jpg",
-          "/images/Story3.jpg",
-          "/images/Story4.jpg",
-          "/images/Story5.jpg",
-          "/images/Story6.jpg",
-          "/images/Story7.jpg",
-        ].map((src, index) => (
+        {slides.map(({ image, link }, index) => (
           <SwiperSlide key={index}>
             <div className="w-full h-[300px] object-cover">
-              <Image
-                src={src}
-                alt={`ongdalsam story ${index}`}
-                width={1080}
-                height={1080}
-                className="rounded-[10px]"
-              />
+              <a href={link}>
+                <Image
+                  src={image}
+                  alt={`ongdalsam story ${index}`}
+                  width={1080}
+                  height={1080}
+                  className="rounded-[10px]"
+                />
+              </a>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
       {/* Custom navigation buttons */}
-      <div className="custom-prev absolute top-[-30px] right-[40px] z-10 transform -translate-y-1/2  rounded-full p-2 cursor-pointer  hidden xl:block">
+      <div className="custom-prev absolute top-[-30px] right-[40px] z-10 transform -translate-y-1/2 rounded-full p-2 cursor-pointer hidden xl:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6 text-gray-700"
@@ -81,7 +109,7 @@ const SwiperComponent = () => {
           />
         </svg>
       </div>
-      <div className="custom-next absolute top-[-30px] right-[0px] z-10 transform -translate-y-1/2  rounded-full p-2 cursor-pointer hidden xl:block">
+      <div className="custom-next absolute top-[-30px] right-[0px] z-10 transform -translate-y-1/2 rounded-full p-2 cursor-pointer hidden xl:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6 text-gray-700"

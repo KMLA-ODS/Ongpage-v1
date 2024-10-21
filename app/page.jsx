@@ -3,13 +3,15 @@
 "use client";
 
 import Stats from "../components/Stats";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../components/ui/button";
 import SwiperComponent from "../components/Swiper";
+import ActivitySwiper from "../components/ActivitySwiper";
 
 const Home = () => {
   return (
-    <section className="">
+    <section className="h-[5000px]">
       {/* banner */}
 
       <div className="h-[390px] xl:h-[620px] bg-[url('/images/Home_bg.jpg')] bg-cover bg-center">
@@ -66,31 +68,129 @@ const Home = () => {
 
         {/* award */}
 
-        {/* activity */}
-        {/* <div className="w-full h-[319px] mt-10 ">
-          <div className="flex flex-col xl:flex-row items-center justify-between w-full xl:w-[50%]">
-            <div className="w-full">
-              <h2 className="font-semibold text-[20px] text-left xl:text-left xl:text-[35px] xl:font-bold">
-                <i>01 </i> 해외봉사
-              </h2>
-              <p className="font-light text-gray-600 text-[16px] mt-2 text-left xl:text-[18px] xl:font-normal">
-                2023년, 코로나 19 팬데믹 이후 라오스 방비엥 마을에서 봉사를
-                재개하여 멤브레인 정수기 설치와 위생교육을 실시했습니다.
-                옹달샘은 지속 가능한 발전을 위해 꾸준한 유지보수를 중시하며.
-              </p>
-              <Link href={"/donation"}>
-                <Button
-                  size="lg"
-                  className="bg-primary rounded-[5px] text-[15px] font-medium"
-                >
-                  더 알아보기
-                </Button>{" "}
-              </Link>
+        <div className="w-full mt-[70px] xl:mt-[180px]  flex flex-col xl:flex-row">
+          <div className="w-[100%] xl:w-[50%] flex flex-col">
+            <h2 className="text-center font-bold text-[20px] xl:text-[25px] py-5">
+              수상
+            </h2>
+            <div className=" w-[100%] flex">
+              <div className="w-[50%] flex flex-col justify-between items-center text-center">
+                <div className="w-[100px] h-[100px]">
+                  <Image
+                    src="/images/apa.png"
+                    alt={`apa philanthropist`}
+                    width={1080}
+                    height={1080}
+                  />
+                </div>{" "}
+                <p>
+                  {" "}
+                  APA 선정 2017 올해의 <br></br> 청소년 필란트로피스트
+                </p>
+              </div>
+              <div className="w-[50%] flex flex-col justify-between items-center text-center">
+                <div className="w-[100px] h-[100px]">
+                  <Image
+                    src="/images/prize.png"
+                    alt={`prize`}
+                    width={1080}
+                    height={1080}
+                  />
+                </div>{" "}
+                <p className="xl:mt-5">
+                  2024 <br className="sm:hidden"></br> 전국청소년자원봉사대회{" "}
+                  <br></br> 보건복지부 장관상 수상
+                </p>
+              </div>
             </div>
-            <div>photo</div>
           </div>
-        </div> */}
+
+          <div className="w-[100%] xl:w-[50%] flex flex-col xl:mt-0 mt-10">
+            <h2 className="text-center font-bold text-[20px] xl:text-[25px] py-5">
+              협력
+            </h2>
+            <div className="w-[100%] flex">
+              <div className="w-[50%] flex flex-col justify-between items-center text-center">
+                <div className="w-[120px] h-[120px] ">
+                  <Image
+                    src="/images/kia.png"
+                    alt={`prize`}
+                    width={1080}
+                    height={1080}
+                    className=""
+                  />
+                </div>{" "}
+                <p>희망친구 기아대책</p>
+              </div>
+              <div className="w-[50%] flex flex-col justify-between items-center text-center ">
+                <div className="w-[120px] h-[120px]">
+                  <Image
+                    src="/images/koica.png"
+                    alt={`prize`}
+                    width={1080}
+                    height={1080}
+                  />
+                </div>{" "}
+                <p>KOICA 라오스 사무소</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* activity */}
+        <ActivitySwiper></ActivitySwiper>
+
         {/* donation */}
+        <div className="w-full mt-[80px] xl:mt-[140px]">
+          <h2 className="font-semibold text-[20px] text-left xl:text-center xl:text-[35px] xl:font-bold">
+            나에게 맞는 맞춤후원
+          </h2>
+          <p className="font-light text-gray-600 text-[16px] mt-2 text-left xl:text-center xl:text-[18px] xl:font-normal mb-4 xl:mb-10">
+            당신의 소중한 후원으로 세상이 따뜻하게 바뀝니다.
+          </p>
+
+          <div className="flex flex-col xl:flex-row gap-5 justify-center">
+            <div className="w-full h-[220px] xl:h-[351px] xl:max-w-[351px] relative">
+              <div className=" absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-end">
+                <h2 className=" z-20 font-bold text-[30px] text-white">
+                  일시후원
+                </h2>
+              </div>
+              <Image
+                src="/images/donation1.jpeg"
+                alt={`donation 1`}
+                layout="fill" // 부모 요소 크기 맞춤
+                objectFit="cover" // 이미지가 부모 요소에 꽉 차도록
+              />
+            </div>
+            <div className="w-full h-[220px] xl:h-[351px] xl:max-w-[351px] relative">
+              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-end">
+                <h2 className=" z-20 font-bold text-[30px] text-white">
+                  정기후원
+                </h2>
+              </div>{" "}
+              <Image
+                src="/images/donation2.jpeg"
+                alt={`donation 2`}
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div className="w-full h-[220px] xl:h-[351px] xl:max-w-[351px] relative">
+              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 hover:bg-opacity-40 z-10 flex justify-center items-end">
+                <h2 className=" z-20 font-bold text-[30px] text-white">
+                  물품지원
+                </h2>
+              </div>{" "}
+              <Image
+                src="/images/donation3.jpeg"
+                alt={`donation 3`}
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
