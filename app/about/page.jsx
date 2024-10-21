@@ -7,14 +7,13 @@ import {
   TabsTrigger,
 } from "../../components/ui/tabs";
 
-import { ScrollArea, ScrollBar } from "@radix-ui/react-scroll-area";
-import { motion } from "framer-motion";
+import Link from "next/link";
 import Image from "next/image";
 import { ScrollAreaHorizontalDemo } from "../../components/ScrollAreaHorizontalDemo"; // 경로에 따라 맞게 변경
 
 const About = () => {
   return (
-    <section className="h-[2300px]">
+    <section className="h-[4000px]">
       <div className="h-[295px] xl:h-[315px] bg-[url('/images/AboutBanner.jpeg')] bg-cover bg-center">
         <div className="container h-full flex items-end pl-[12px] pb-[40px] lg:pl-0 lg:pb-0 lg:items-center">
           <h2 className="text-[40px] font-bold text-white">옹달샘은</h2>
@@ -188,6 +187,102 @@ const About = () => {
                 <ScrollAreaHorizontalDemo></ScrollAreaHorizontalDemo>
 
                 {/* activities */}
+                <div className="mt-[80px] xl:mt-[100px]">
+                  {/* Overseas Volunteering */}
+                  <div className="mb-[60px] xl:mb-[80px]">
+                    <h2 className="font-bold text-[24px] xl:text-[35px]">
+                      필요한 곳으로 떠납니다.
+                    </h2>
+                    <div className="flex flex-col items-center xl:items-start">
+                      <div className="xl:flex xl:flex-row-reverse w-full">
+                        <div className="xl:w-[50%] relative">
+                          <p className="font-light text-gray-600 text-[16px] xl:text-[18px] mt-2 xl:absolute xl:top-[-55px] xl:left-0 xl:text-left">
+                            옹달샘은 베트남, 라오스 등 여러 국가에서 <br></br>
+                            깨끗한 식수와 위생을 위한 봉사 활동을 진행합니다.{" "}
+                            <br></br>
+                            2023년에는 코로나 이후 라오스 방비엥에서 멤브레인
+                            <br></br>
+                            정수기 설치와 위생 교육을 재개하였습니다.
+                          </p>
+                        </div>
+
+                        <div className="xl:w-[50%] xl:flex xl:items-end">
+                          <Link
+                            href="/activity"
+                            className="text-primary font-bold my-[15px] block"
+                          >
+                            해외봉사 더 알아보기 →
+                          </Link>
+                        </div>
+                      </div>
+                      <div className="w-full xl:w-[1240px] h-[370px] relative xl:mt-[50px]">
+                        <Image
+                          src="/images/oversees-volunteer.JPEG"
+                          alt="해외봉사"
+                          fill
+                          objectFit="cover"
+                          className="mb-[20px] rounded-[20px]"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Technology Development and Fundraising */}
+                  <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
+                    {/* Technology Development */}
+                    <div>
+                      <h2 className="font-bold text-[20px] xl:text-[28px]">
+                        기술개발
+                      </h2>
+
+                      <p className="font-light text-gray-600 text-[16px] xl:text-[18px] mt-2">
+                        지속 가능한 기술 개발을 통해 현지에 적합한 <br></br>
+                        멤브레인 필터 개발을 추진하고 있습니다.
+                      </p>
+                      <Link
+                        href="/activity"
+                        className="text-primary font-bold my-[15px] block"
+                      >
+                        기술개발 더 알아보기 →
+                      </Link>
+                      <div className="w-full h-[370px] relative">
+                        <Image
+                          src="/images/technology-development.JPEG"
+                          alt="기술개발"
+                          fill
+                          objectFit="cover"
+                          className="mb-[20px] rounded-[20px]"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Fundraising */}
+                    <div>
+                      <h2 className="font-bold text-[20px] xl:text-[28px]">
+                        모금사업
+                      </h2>
+                      <p className="font-light text-gray-600 text-[16px] xl:text-[18px] mt-2">
+                        후원금 모금으로 봉사활동과 기술개발을 <br></br>
+                        지속적으로 지원하고 있습니다.
+                      </p>
+                      <Link
+                        href="/activity"
+                        className="text-primary font-bold my-[15px] block"
+                      >
+                        모금사업 더 알아보기 →
+                      </Link>
+                      <div className="w-full  h-[370px] relative">
+                        <Image
+                          src="/images/fundraising.JPG"
+                          alt="모금사업"
+                          fill
+                          objectFit="cover"
+                          className="mb-[20px] rounded-[20px]"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </TabsContent>
 
               <TabsContent value="values">

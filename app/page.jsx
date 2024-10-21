@@ -17,7 +17,9 @@ const Home = () => {
       <div className="h-[390px] xl:h-[620px] bg-[url('/images/Home_bg.jpg')] bg-cover bg-center">
         <div className="container mx-auto h-full">
           <div className="pt-[140px] xl:pt-[220px]">
-            <span className="text-white  font-semibold">2024</span>
+            <span className="text-white xl:text-[20px] font-semibold">
+              2024
+            </span>
             <h1 className="text-white mt-[15px] xl:mt-[19px] font-bold text-4xl mb-[22px] xl:text-[65px] xl:mb-[22px] xl:leading-tight  ">
               민족사관고등학교 <br></br> 옹달샘
             </h1>
@@ -68,9 +70,9 @@ const Home = () => {
 
         {/* award */}
 
-        <div className="w-full mt-[70px] xl:mt-[180px]  flex flex-col xl:flex-row">
+        <div className="w-full mt-[70px] xl:mt-[180px]  flex flex-col xl:flex-row xl:bg-[#F9DD93] xl:p-6 absolute top-[1600px]   xl:top-[1750px] left-0">
           <div className="w-[100%] xl:w-[50%] flex flex-col">
-            <h2 className="text-center font-bold text-[20px] xl:text-[25px] py-5">
+            <h2 className="text-center font-bold text-[20px] xl:text-[25px] py-5 md:hidden">
               수상
             </h2>
             <div className=" w-[100%] flex">
@@ -106,7 +108,7 @@ const Home = () => {
           </div>
 
           <div className="w-[100%] xl:w-[50%] flex flex-col xl:mt-0 mt-10">
-            <h2 className="text-center font-bold text-[20px] xl:text-[25px] py-5">
+            <h2 className="text-center font-bold text-[20px] xl:text-[25px] py-5 md:hidden">
               협력
             </h2>
             <div className="w-[100%] flex">
@@ -151,11 +153,14 @@ const Home = () => {
 
           <div className="flex flex-col xl:flex-row gap-5 justify-center">
             <div className="w-full h-[150px] xl:h-[351px] xl:max-w-[351px] relative">
-              <div className=" absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
-                <h2 className=" z-20 font-bold text-[20px] text-white">
-                  일시후원
-                </h2>
-              </div>
+              <Link href={"/donation"}>
+                <div className=" absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
+                  <h2 className=" z-20 font-bold text-[20px] text-white">
+                    일시후원
+                  </h2>
+                </div>
+              </Link>
+
               <Image
                 src="/images/m-donation1.jpeg"
                 alt={`donation 1`}
@@ -164,11 +169,14 @@ const Home = () => {
               />
             </div>
             <div className="w-full h-[150px] xl:h-[351px] xl:max-w-[351px] relative">
-              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
-                <h2 className=" z-20 font-bold text-[20px] text-white">
-                  정기후원
-                </h2>
-              </div>{" "}
+              <Link href={"/donation"}>
+                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
+                  <h2 className=" z-20 font-bold text-[20px] text-white">
+                    정기후원
+                  </h2>
+                </div>{" "}
+              </Link>
+
               <Image
                 src="/images/m-donation2.jpeg"
                 alt={`donation 2`}
@@ -177,11 +185,14 @@ const Home = () => {
               />
             </div>
             <div className="w-full h-[150px] xl:h-[351px] xl:max-w-[351px] relative">
-              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 hover:bg-opacity-40 z-10 flex justify-center items-center">
-                <h2 className=" z-20 font-bold text-[20px] text-white">
-                  물품지원
-                </h2>
-              </div>{" "}
+              <Link href={"/donation"}>
+                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 hover:bg-opacity-40 z-10 flex justify-center items-center">
+                  <h2 className=" z-20 font-bold text-[20px] text-white">
+                    물품지원
+                  </h2>
+                </div>
+              </Link>
+
               <Image
                 src="/images/m-donation3.jpeg"
                 alt={`donation 3`}
@@ -190,7 +201,7 @@ const Home = () => {
               />
             </div>
           </div>
-          <h3 className="mt-6 xl:ml-[70px] font-light text-gray-600">
+          <h3 className="mt-6 xl:ml-[70px]">
             후원금 전액은 개발도상국 아이들을 위한{" "}
             <br className="sm:hidden"></br> 위생용품 지원과 가람정수기 보급에
             사용됩니다.<br></br> 자세한 사용처는 정기 소식지로 확인하실 수

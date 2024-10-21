@@ -26,11 +26,13 @@ const Donation = () => {
 
           <div className="flex flex-row flex-wrap gap-5 xl:gap-[46px] justify-start xl:justify-center">
             <div className="w-[45%] max-w-[220px] h-[220px] md:h-[280px] md:w-[30%] md:max-w-[280px] xl:max-w-[300px] xl:h-[300px] xl:w-[300px] relative">
-              <div className=" absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
-                <h2 className=" z-20 font-bold text-[18px] text-white">
-                  일시후원
-                </h2>
-              </div>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNfm5kMxWcY8FXYsV-nfKW6LGUFZ8ZA4PKI4962aFyjqqWag/viewform">
+                <div className=" absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
+                  <h2 className=" z-20 font-bold text-[18px] text-white">
+                    일시후원
+                  </h2>
+                </div>
+              </a>
               <Image
                 src="/images/donation1.jpeg"
                 alt={`donation 1`}
@@ -39,11 +41,13 @@ const Donation = () => {
               />
             </div>
             <div className="w-[45%] max-w-[220px] h-[220px] md:h-[280px] md:w-[30%] md:max-w-[280px] xl:max-w-[300px] xl:h-[300px] xl:w-[300px] relative">
-              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
-                <h2 className=" z-20 font-bold text-[18px] text-white">
-                  정기후원
-                </h2>
-              </div>{" "}
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNfm5kMxWcY8FXYsV-nfKW6LGUFZ8ZA4PKI4962aFyjqqWag/viewform">
+                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
+                  <h2 className=" z-20 font-bold text-[18px] text-white">
+                    정기후원
+                  </h2>
+                </div>{" "}
+              </a>
               <Image
                 src="/images/donation2.jpeg"
                 alt={`donation 2`}
@@ -52,11 +56,13 @@ const Donation = () => {
               />
             </div>
             <div className="w-[45%] max-w-[220px] h-[220px] md:h-[280px] md:w-[30%] md:max-w-[280px] xl:max-w-[300px] xl:h-[300px] xl:w-[300px] relative">
-              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 hover:bg-opacity-40 z-10 flex justify-center items-center">
-                <h2 className=" z-20 font-bold text-[18px] text-white">
-                  물품지원
-                </h2>
-              </div>{" "}
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNfm5kMxWcY8FXYsV-nfKW6LGUFZ8ZA4PKI4962aFyjqqWag/viewform">
+                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 hover:bg-opacity-40 z-10 flex justify-center items-center">
+                  <h2 className=" z-20 font-bold text-[18px] text-white">
+                    물품지원
+                  </h2>
+                </div>{" "}
+              </a>
               <Image
                 src="/images/donation3.jpg"
                 alt={`donation 3`}

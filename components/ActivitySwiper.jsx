@@ -42,7 +42,7 @@ const ActivitySwiper = () => {
     setProject(projects[currentIndex]);
   };
   return (
-    <div className="w-full mt-[90px] xl:mt-40 text-black ">
+    <div className="w-full mt-[630px] md:mt-[620px] xl:mt-[550px] text-black ">
       <h2 className="font-semibold mb-8 xl:mb-[100px] text-[20px] text-left xl:text-center xl:text-[35px] xl:font-bold">
         옹달샘의 활동
       </h2>
