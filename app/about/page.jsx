@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 import {
   Tabs,
   TabsContent,
@@ -11,6 +9,7 @@ import {
 
 import { ScrollArea, ScrollBar } from "@radix-ui/react-scroll-area";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { ScrollAreaHorizontalDemo } from "../../components/ScrollAreaHorizontalDemo"; // 경로에 따라 맞게 변경
 
 const About = () => {
@@ -201,23 +200,39 @@ const About = () => {
                     발전하는 옹달샘이 되겠습니다
                   </p>
                   <div className="w-full flex flex-col xl:flex-row items-center gap-5 justify-center text-left text-white">
-                    <div className="w-[100%] h-[200px] xl:h-[400px] xl:w-[400px] bg-[url('/images/vision.png')] bg-cover bg-center p-[20px] flex flex-col justify-end">
-                      <h3 className="font-bold text-[25px] xl:text-[30px]">
-                        비전
-                      </h3>
-                      <span className="xl:text-[18px]">
-                        우리는 모든 아동이 생존, 보호, 발달 및 참여의 <br></br>{" "}
-                        권리를 온전히 누리는 세상을 꿈꿉니다.
-                      </span>
+                    <div className="w-[100%] h-[200px] xl:h-[400px] xl:w-[400px] relative">
+                      <div className="absolute top-0 left-0 w-full h-full z-10 p-[20px] flex flex-col justify-end ">
+                        <h3 className="font-bold text-[25px] xl:text-[30px]">
+                          비전
+                        </h3>
+                        <span className="xl:text-[18px]">
+                          우리는 모든 아동이 생존, 보호, 발달 및 참여의{" "}
+                          <br></br> 권리를 온전히 누리는 세상을 꿈꿉니다.
+                        </span>
+                      </div>
+                      <Image
+                        src="/images/vision.png"
+                        alt={`ongdalsam vision`}
+                        layout="fill"
+                        objectFit="cover"
+                      />
                     </div>
-                    <div className="w-[100%] h-[200px] xl:h-[400px] xl:w-[400px] bg-[url('/images/mission.png')] bg-cover bg-center p-[20px] flex flex-col justify-end">
-                      <h3 className="font-bold text-[25px] xl:text-[30px]">
-                        미션
-                      </h3>
-                      <span className="xl:text-[18px]">
-                        우리는 세상이 아동을 대하는 방식에 <br></br> 획기적
-                        변화를 이끌어 내고자 합니다
-                      </span>
+                    <div className="w-[100%] h-[200px] xl:h-[400px] xl:w-[400px] relative">
+                      <div className="absolute top-0 left-0 w-full h-full z-10 p-[20px] flex flex-col justify-end">
+                        <h3 className="font-bold text-[25px] xl:text-[30px]">
+                          미션
+                        </h3>
+                        <span className="xl:text-[18px]">
+                          우리는 세상이 아동을 대하는 방식에 <br></br> 획기적
+                          변화를 이끌어 내고자 합니다
+                        </span>
+                      </div>
+                      <Image
+                        src="/images/mission.png"
+                        alt={`ongdalsam mission`}
+                        layout="fill"
+                        objectFit="cover"
+                      />
                     </div>
                   </div>
                   <h2 className="pt-16 pb-8 font-bold text-[20px] xl:text-[30px] xl:pt-14 xl:pb-8">

@@ -5,23 +5,23 @@ import { usePathname } from "next/navigation";
 
 const links = [
   {
-    name: "소개",
+    name: "기관소개",
     path: "/about",
   },
   {
-    name: "활동",
+    name: "활동소개",
     path: "/activity",
   },
   {
-    name: "스토리",
-    path: "/story",
+    name: "후원안내",
+    path: "/donation",
   },
   {
-    name: "기술",
-    path: "/activity",
+    name: "문의하기",
+    path: "/contact",
   },
   {
-    name: "구성원",
+    name: "부원소개",
     path: "/members",
   },
 ];

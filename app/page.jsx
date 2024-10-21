@@ -150,46 +150,52 @@ const Home = () => {
           </p>
 
           <div className="flex flex-col xl:flex-row gap-5 justify-center">
-            <div className="w-full h-[220px] xl:h-[351px] xl:max-w-[351px] relative">
-              <div className=" absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-end">
-                <h2 className=" z-20 font-bold text-[30px] text-white">
+            <div className="w-full h-[150px] xl:h-[351px] xl:max-w-[351px] relative">
+              <div className=" absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
+                <h2 className=" z-20 font-bold text-[20px] text-white">
                   일시후원
                 </h2>
               </div>
               <Image
-                src="/images/donation1.jpeg"
+                src="/images/m-donation1.jpeg"
                 alt={`donation 1`}
                 layout="fill" // 부모 요소 크기 맞춤
                 objectFit="cover" // 이미지가 부모 요소에 꽉 차도록
               />
             </div>
-            <div className="w-full h-[220px] xl:h-[351px] xl:max-w-[351px] relative">
-              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-end">
-                <h2 className=" z-20 font-bold text-[30px] text-white">
+            <div className="w-full h-[150px] xl:h-[351px] xl:max-w-[351px] relative">
+              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
+                <h2 className=" z-20 font-bold text-[20px] text-white">
                   정기후원
                 </h2>
               </div>{" "}
               <Image
-                src="/images/donation2.jpeg"
+                src="/images/m-donation2.jpeg"
                 alt={`donation 2`}
                 layout="fill"
                 objectFit="cover"
               />
             </div>
-            <div className="w-full h-[220px] xl:h-[351px] xl:max-w-[351px] relative">
-              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 hover:bg-opacity-40 z-10 flex justify-center items-end">
-                <h2 className=" z-20 font-bold text-[30px] text-white">
+            <div className="w-full h-[150px] xl:h-[351px] xl:max-w-[351px] relative">
+              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 hover:bg-opacity-40 z-10 flex justify-center items-center">
+                <h2 className=" z-20 font-bold text-[20px] text-white">
                   물품지원
                 </h2>
               </div>{" "}
               <Image
-                src="/images/donation3.jpeg"
+                src="/images/m-donation3.jpeg"
                 alt={`donation 3`}
                 layout="fill"
                 objectFit="cover"
               />
             </div>
           </div>
+          <h3 className="mt-6 xl:ml-[70px] font-light text-gray-600">
+            후원금 전액은 개발도상국 아이들을 위한{" "}
+            <br className="sm:hidden"></br> 위생용품 지원과 가람정수기 보급에
+            사용됩니다.<br></br> 자세한 사용처는 정기 소식지로 확인하실 수
+            있습니다.
+          </h3>
         </div>
       </div>
     </section>
