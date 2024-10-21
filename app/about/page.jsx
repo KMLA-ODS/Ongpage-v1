@@ -14,7 +14,7 @@ import { ScrollAreaHorizontalDemo } from "../../components/ScrollAreaHorizontalD
 const About = () => {
   return (
     <section className="mb-12 xl:mb-16">
-      <div className="h-[295px] xl:h-[315px] bg-[url('/images/AboutBanner.jpeg')] bg-cover bg-center">
+      <div className="h-[295px] xl:h-[315px] bg-[url('/images/AboutBanner.webp')] bg-cover bg-center">
         <div className="container h-full flex items-end pl-[12px] pb-[40px] lg:pl-0 lg:pb-0 lg:items-center">
           <h2 className="text-[40px] font-bold text-white">옹달샘은</h2>
         </div>
@@ -217,7 +217,7 @@ const About = () => {
                       </div>
                       <div className="w-full xl:w-[1240px] h-[370px] relative xl:mt-[50px]">
                         <Image
-                          src="/images/oversees-volunteer.JPEG"
+                          src="/images/oversees-volunteer.webp"
                           alt="해외봉사"
                           fill
                           objectFit="cover"
@@ -323,7 +323,7 @@ const About = () => {
                         </span>
                       </div>
                       <Image
-                        src="/images/mission.png"
+                        src="/images/mission.webp"
                         alt={`ongdalsam mission`}
                         layout="fill"
                         objectFit="cover"

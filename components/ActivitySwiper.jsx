@@ -83,6 +83,7 @@ const ActivitySwiper = () => {
                     <div className="relative w-full h-full">
                       <Image
                         src={project.image}
+                        alt={project.title}
                         fill
                         className="object-cover"
                       ></Image>

@@ -27,7 +27,7 @@ const projects = [
     title: "교육봉사",
     description:
       "더미텍스트 감사원의 조직·직무범위·감사위원의 자격·감사대상공무원의 범위 기타 필요한 사항은 법률로 정한다. 헌법재판소 재판관의 임기는 6년으로 하며, 법률",
-    image: "/images/education.jpeg",
+    image: "/images/education.webp",
   },
   {
     num: "03",
@@ -48,7 +48,7 @@ const projects = [
 const Activity = () => {
   return (
     <section className="">
-      <div className="h-[295px] xl:h-[315px] bg-[url('/images/ActivityBanner.jpg')] bg-cover bg-center">
+      <div className="h-[295px] xl:h-[315px] bg-[url('/images/ActivityBanner.webp')] bg-cover bg-center">
         <div className="container h-full flex items-end pl-[12px] pb-[40px] lg:pl-0 lg:pb-0 lg:items-center">
           <h2 className="text-[40px] font-bold text-white">활동소개</h2>
         </div>

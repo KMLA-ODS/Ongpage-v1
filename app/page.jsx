@@ -2,19 +2,27 @@
 
 "use client";
 
-import Stats from "../components/Stats";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../components/ui/button";
-import SwiperComponent from "../components/Swiper";
-import ActivitySwiper from "../components/ActivitySwiper";
+
+// Dynamic Imports (코드 스플리팅을 통해 초기 로드 시간을 줄임)
+const Stats = dynamic(() => import("../components/Stats"), {
+  ssr: false,
+});
+const SwiperComponent = dynamic(() => import("../components/Swiper"), {
+  ssr: false,
+});
+const ActivitySwiper = dynamic(() => import("../components/ActivitySwiper"), {
+  ssr: false,
+});
 
 const Home = () => {
   return (
     <section className="mb-16 xl:mb-36">
       {/* banner */}
-
-      <div className="h-[390px] xl:h-[620px] bg-[url('/images/Home_bg.jpg')] bg-cover bg-center">
+      <div className="h-[390px] xl:h-[620px] bg-[url('/images/Home_bg.webp')] bg-cover bg-center">
         <div className="container mx-auto h-full">
           <div className="pt-[140px] xl:pt-[220px]">
             <span className="text-white xl:text-[20px] font-semibold">
@@ -32,7 +40,6 @@ const Home = () => {
 
       <div className="container mx-auto h-full">
         {/* introduction */}
-
         <div className="mt-[60px] mb-[20px] xl:mt-[100px] xl:mb-[40px] w-full">
           <h2 className="font-semibold text-[20px] text-left xl:text-center xl:text-[35px] xl:font-bold">
             옹달샘의 특별한 <span className="text-primary">봉사 이야기</span>
@@ -51,7 +58,8 @@ const Home = () => {
           </div>
         </div>
 
-        <SwiperComponent></SwiperComponent>
+        {/* Swiper Component */}
+        <SwiperComponent />
 
         {/* numbers */}
         <div className="w-full mt-[40px] xl:mt-[140px]">
@@ -65,28 +73,29 @@ const Home = () => {
             동아리입니다.
           </p>
 
-          <Stats></Stats>
+          {/* Lazy loading 적용된 Stats */}
+          <Stats />
         </div>
 
         {/* award */}
-
-        <div className="w-full mt-[70px] xl:mt-[180px]  flex flex-col xl:flex-row xl:bg-[#F9DD93] xl:p-6 absolute top-[1600px]   xl:top-[1750px] left-0">
+        <div className="w-full mt-[70px] xl:mt-[180px] flex flex-col xl:flex-row xl:bg-[#F9DD93] xl:p-6 absolute top-[1600px] xl:top-[1750px] left-0">
           <div className="w-[100%] xl:w-[50%] flex flex-col">
             <h2 className="text-center font-bold text-[20px] xl:text-[25px] py-5 md:hidden">
               수상
             </h2>
-            <div className=" w-[100%] flex">
+            <div className="w-[100%] flex">
               <div className="w-[50%] flex flex-col justify-between items-center text-center">
                 <div className="w-[100px] h-[100px]">
+                  {/* Lazy loading 적용 */}
                   <Image
                     src="/images/apa.png"
                     alt={`apa philanthropist`}
-                    width={1080}
-                    height={1080}
+                    width={100}
+                    height={100}
+                    loading="lazy"
                   />
                 </div>{" "}
                 <p>
-                  {" "}
                   APA 선정 2017 올해의 <br></br> 청소년 필란트로피스트
                 </p>
               </div>
@@ -95,8 +104,9 @@ const Home = () => {
                   <Image
                     src="/images/prize.png"
                     alt={`prize`}
-                    width={1080}
-                    height={1080}
+                    width={100}
+                    height={100}
+                    loading="lazy"
                   />
                 </div>{" "}
                 <p className="xl:mt-5">
@@ -113,13 +123,13 @@ const Home = () => {
             </h2>
             <div className="w-[100%] flex">
               <div className="w-[50%] flex flex-col justify-between items-center text-center">
-                <div className="w-[120px] h-[120px] ">
+                <div className="w-[120px] h-[120px]">
                   <Image
                     src="/images/kia.png"
                     alt={`prize`}
-                    width={1080}
-                    height={1080}
-                    className=""
+                    width={120}
+                    height={120}
+                    loading="lazy"
                   />
                 </div>{" "}
                 <p>희망친구 기아대책</p>
@@ -129,8 +139,9 @@ const Home = () => {
                   <Image
                     src="/images/koica.png"
                     alt={`prize`}
-                    width={1080}
-                    height={1080}
+                    width={120}
+                    height={120}
+                    loading="lazy"
                   />
                 </div>{" "}
                 <p>KOICA 라오스 사무소</p>
@@ -139,8 +150,8 @@ const Home = () => {
           </div>
         </div>
 
-        {/* activity */}
-        <ActivitySwiper></ActivitySwiper>
+        {/* Activity Swiper Component */}
+        <ActivitySwiper />
 
         {/* donation */}
         <div className="w-full mt-[80px] xl:mt-[140px]">
@@ -152,9 +163,10 @@ const Home = () => {
           </p>
 
           <div className="flex flex-col xl:flex-row gap-5 justify-center">
+            {/* Lazy loading 적용된 이미지 */}
             <div className="w-full h-[150px] xl:h-[351px] xl:max-w-[351px] relative">
               <Link href={"/donation"}>
-                <div className=" absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
+                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
                   <h2 className=" z-20 font-bold text-[20px] text-white">
                     일시후원
                   </h2>
@@ -162,10 +174,11 @@ const Home = () => {
               </Link>
 
               <Image
-                src="/images/m-donation1.jpeg"
+                src="/images/m-donation1.webp"
                 alt={`donation 1`}
-                layout="fill" // 부모 요소 크기 맞춤
-                objectFit="cover" // 이미지가 부모 요소에 꽉 차도록
+                layout="fill"
+                objectFit="cover"
+                loading="lazy"
               />
             </div>
             <div className="w-full h-[150px] xl:h-[351px] xl:max-w-[351px] relative">
@@ -182,15 +195,16 @@ const Home = () => {
                 alt={`donation 2`}
                 layout="fill"
                 objectFit="cover"
+                loading="lazy"
               />
             </div>
             <div className="w-full h-[150px] xl:h-[351px] xl:max-w-[351px] relative">
               <Link href={"/donation"}>
-                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 hover:bg-opacity-40 z-10 flex justify-center items-center">
+                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
                   <h2 className=" z-20 font-bold text-[20px] text-white">
-                    물품지원
+                    맞춤후원
                   </h2>
-                </div>
+                </div>{" "}
               </Link>
 
               <Image
@@ -198,15 +212,10 @@ const Home = () => {
                 alt={`donation 3`}
                 layout="fill"
                 objectFit="cover"
+                loading="lazy"
               />
             </div>
           </div>
-          <h3 className="mt-6 xl:ml-[70px]">
-            후원금 전액은 개발도상국 아이들을 위한{" "}
-            <br className="sm:hidden"></br> 위생용품 지원과 가람정수기 보급에
-            사용됩니다.<br></br> 자세한 사용처는 정기 소식지로 확인하실 수
-            있습니다.
-          </h3>
         </div>
       </div>
     </section>

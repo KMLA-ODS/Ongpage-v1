@@ -40,7 +40,10 @@ export const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger className="flex justify-center items-center">
-        <CiMenuBurger className="text-[32px]"></CiMenuBurger>
+        <CiMenuBurger
+          aria-label="menu-button"
+          className="text-[32px]"
+        ></CiMenuBurger>
       </SheetTrigger>
       <SheetContent className="flex flex-col z-50">
         {/* logo */}

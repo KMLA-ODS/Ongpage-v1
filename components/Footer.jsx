@@ -1,14 +1,26 @@
 "use client";
 
 import { FaFacebookF, FaInstagram, FaGithub, FaYoutube } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <div className="container mx-auto h-auto mb-4 xl:mb-12  border-t-2 border-[#3B3B3B]">
       {/* Links section */}
       <div className="mt-6 xl:mt-8 text-center xl:text-left flex justify-start gap-4">
-        <a className="font-bold text-[15px] xl:text-[16px]">자주하는 질문</a>
-        <a className="font-bold text-[15px] xl:text-[16px]">문의하기</a>
+        <Link
+          href={"/contact"}
+          className="font-bold text-[15px] xl:text-[16px]"
+        >
+          자주하는 질문
+        </Link>
+
+        <Link
+          href={"/contact"}
+          className="font-bold text-[15px] xl:text-[16px]"
+        >
+          문의하기
+        </Link>
       </div>
 
       {/* Social Media Icons */}

@@ -8,7 +8,7 @@ const stats = [
     num: 10,
     text: "옹달샘이 걸어온 헌신의 시간",
     unit: "년",
-    image: "/images/number1.png",
+    image: "/images/number1.webp",
   },
   {
     num: 146,
@@ -20,13 +20,13 @@ const stats = [
     num: 400,
     text: "옹달샘이 지원한 아이들의 수",
     unit: "+명",
-    image: "/images/number3.jpeg",
+    image: "/images/number3.webp",
   },
   {
     num: 45,
     text: "옹달샘을 거쳐간 졸업생 수",
     unit: "명",
-    image: "/images/number4.jpg",
+    image: "/images/number4.webp",
   },
 ];
 

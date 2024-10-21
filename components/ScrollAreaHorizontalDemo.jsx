@@ -4,15 +4,15 @@ import { ScrollArea, ScrollBar } from "./ui/scroll-area";
 const works = [
   {
     artist: "2014",
-    art: "/images/history-2014.JPG",
+    art: "/images/history-2014.webp",
   },
   {
     artist: "2015",
-    art: "/images/history-2015.png",
+    art: "/images/history-2015.webp",
   },
   {
     artist: "2016",
-    art: "/images/history-2016.png",
+    art: "/images/history-2016.webp",
   },
   {
     artist: "2017",
@@ -24,7 +24,7 @@ const works = [
   },
   {
     artist: "2024",
-    art: "/images/history-2024.JPG",
+    art: "/images/history-2024.webp",
   },
 ];
 

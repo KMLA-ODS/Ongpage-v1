@@ -7,10 +7,18 @@ const ActSliderButton = ({ containerStyles, btnStyles, iconsStyles }) => {
 
   return (
     <div className={containerStyles}>
-      <button className={btnStyles} onClick={() => swiper.slidePrev()}>
+      <button
+        aria-label="button-left"
+        className={btnStyles}
+        onClick={() => swiper.slidePrev()}
+      >
         <PiCaretLeftBold className={iconsStyles} />
       </button>
-      <button className={btnStyles} onClick={() => swiper.slideNext()}>
+      <button
+        aria-label="button-right"
+        className={btnStyles}
+        onClick={() => swiper.slideNext()}
+      >
         <PiCaretRightBold className={iconsStyles} />
       </button>
     </div>
