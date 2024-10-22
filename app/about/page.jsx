@@ -467,7 +467,7 @@ const About = () => {
                   </div>
                   <div className="w-[100%] h-[405px] xl:w-[50%] xl:h-[620px]">
                     <Image
-                      src="/images/Vice-Captain.jpg"
+                      src="/images/Vice-Captain.png"
                       alt="ongdalsam vice captain"
                       width={335}
                       height={335}
