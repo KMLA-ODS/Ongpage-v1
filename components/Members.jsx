@@ -35,9 +35,9 @@ const members = [
         image: "/images/kanghyeonpark.png",
       },
       {
-        name: "Seohyun Kang",
+        name: "Seohyeon Kang",
         position: "Member",
-        image: "/images/seohyunkang.png",
+        image: "/images/seohyeonkang.png",
       },
       {
         name: "Sunwoo Shin",
