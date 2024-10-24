@@ -158,7 +158,7 @@ const Home = () => {
           <h2 className="font-semibold text-[20px] text-left xl:text-center xl:text-[35px] xl:font-bold">
             나에게 맞는 맞춤후원
           </h2>
-          <p className="font-light text-gray-600 text-[16px] mt-2 text-left xl:text-center xl:text-[18px] xl:font-normal mb-4 xl:mb-10">
+          <p className="font-light text-gray-600 text-[15px] xs:text-[16px] mt-2 text-left xl:text-center xl:text-[18px] xl:font-normal mb-4 xl:mb-10">
             당신의 소중한 후원으로 세상이 따뜻하게 바뀝니다.
           </p>
 

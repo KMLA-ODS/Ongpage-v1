@@ -94,7 +94,9 @@ const Stats = () => {
                     {item.unit}
                   </span>
                 </div>
-                <p className="xl:text-[18px] font-light">{item.text}</p>
+                <p className=" text-[15px] xs:text-[16px] xl:text-[18px] font-light">
+                  {item.text}
+                </p>
               </div>
             </div>
           );

@@ -42,7 +42,7 @@ const About = () => {
                     width={24}
                     height={24}
                   ></Image>
-                  <h2 className="text-[20px] font-bold xl:text-[30px] my-[23px]">
+                  <h2 className=" text-[18px] xs:text-[20px] font-bold xl:text-[30px] my-[23px] text-center">
                     가장 필요한 곳에 현지에 알맞은 방법으로.
                   </h2>
                   <Image
@@ -51,7 +51,7 @@ const About = () => {
                     width={24}
                     height={24}
                   ></Image>
-                  <p className=" xl:text-[20px] text-center mt-[54px]">
+                  <p className=" text-[14.5px] xs:text-[16px] xl:text-[20px] text-center mt-[54px]">
                     2014년 설립된 옹달샘은
                     <br className="xl:hidden"></br> 깨끗한 식수를 필요로 하는
                     개발도상국 아동과 마을을 <br></br> 위해 식수 공급 및
@@ -178,7 +178,7 @@ const About = () => {
                     라오스, 베트남, 캄보디아 등<br></br> 다양한 국가에서
                     봉사활동을 전개합니다.
                   </h2>
-                  <p className="font-light text-gray-600 text-[16px] mt-2 text-left xl:text-left xl:text-[16px] xl:font-normal">
+                  <p className="font-light text-gray-600 text-[15px] mt-2 text-left xl:text-left xs:text-[16px] xl:font-normal">
                     2023년, 코로나 19 팬데믹 이후 라오스 방비엥에서 <br></br>
                     멤브레인 정수기 설치와 위생교육을 재개했습니다.<br></br>{" "}
                     옹달샘은 언제나 지속 가능한 발전을 위해 노력합니다.
@@ -196,7 +196,7 @@ const About = () => {
                     <div className="flex flex-col items-center xl:items-start">
                       <div className="xl:flex xl:flex-row-reverse w-full">
                         <div className="xl:w-[50%] relative">
-                          <p className="font-light text-gray-600 text-[16px] xl:text-[18px] mt-2 xl:absolute xl:top-[-55px] xl:left-0 xl:text-left">
+                          <p className="font-light text-gray-600 text-[15px] sx:text-[16px] xl:text-[18px] mt-2 xl:absolute xl:top-[-55px] xl:left-0 xl:text-left">
                             옹달샘은 베트남, 라오스 등 여러 국가에서 <br></br>
                             깨끗한 식수와 위생을 위한 봉사 활동을 진행합니다.{" "}
                             <br></br>
