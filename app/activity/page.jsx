@@ -99,7 +99,7 @@ const Activity = () => {
                 </div>
               </TabsContent>
               <TabsContent value="tech">
-                <div className="mt-[50px]">technology</div>
+                <div className="mt-[50px]">tech</div>
               </TabsContent>
               <TabsContent value="fd">
                 <div className="mt-[50px]">fundraising</div>
