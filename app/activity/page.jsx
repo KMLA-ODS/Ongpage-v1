@@ -69,23 +69,13 @@ const Activity = () => {
             <div className="min-h-[70vh] w-full">
               <TabsContent value="oversees-volunteering">
                 {/* description */}
-                <div className="w-full flex flex-col items-center pt-[97px]">
-                  <Image
-                    src="/images/ddaomdown.svg"
-                    alt="ongdalsam"
-                    width={24}
-                    height={24}
-                  ></Image>
-                  <h2 className=" text-[18px] xs:text-[20px] font-bold xl:text-[30px] my-[23px] text-center">
-                    해외봉사{" "}
+                <div className="w-full flex flex-col items-left pt-[97px]">
+                  <h2 className=" text-[18px] xs:text-[20px] font-bold xl:text-[30px] my-[10px] text-left">
+                    매년 8월 옹달샘은{" "}
+                    <span className="text-primary">현장으로</span> 나섭니다.{" "}
                   </h2>
-                  <Image
-                    src="/images/ddaomup.svg"
-                    alt="ongdalsam"
-                    width={24}
-                    height={24}
-                  ></Image>
-                  <p className=" text-[14.5px] xs:text-[16px] xl:text-[20px] text-center mt-[54px]">
+
+                  <p className=" text-[14.5px] xs:text-[16px] xl:text-[18px] text-left ">
                     2014년 설립된 옹달샘은
                     <br className="xl:hidden"></br> 깨끗한 식수를 필요로 하는
                     개발도상국 아동과 마을을 <br></br> 위해 식수 공급 및
@@ -95,8 +85,8 @@ const Activity = () => {
                     </span>
                     입니다.
                   </p>
-                  <div className="w-[35px] h-[2px] xl:w-[47px] xl:h-[3px] bg-[#D9D9D9] mt-[40px] xl:mt-[54px]"></div>
                 </div>
+                <div></div>
               </TabsContent>
               <TabsContent value="tech">
                 <div className="mt-[50px]">tech</div>
