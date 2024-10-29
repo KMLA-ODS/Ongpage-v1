@@ -202,7 +202,7 @@ const Home = () => {
               <Link href={"/donation"}>
                 <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
                   <h2 className=" z-20 font-bold text-[20px] text-white">
-                    맞춤후원
+                    물품지원
                   </h2>
                 </div>{" "}
               </Link>
