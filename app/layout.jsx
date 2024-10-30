@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import PageTransition from "../components/PageTransition";
 
 const pretendard = localFont({
   src: "./fonts/PretendardVariable.woff2",
@@ -29,8 +30,7 @@ export default function RootLayout({ children }) {
         <ScrollToTopButton />
 
         <Header />
-        {children}
-
+        <PageTransition>{children}</PageTransition>
         <Footer />
       </body>
     </html>
