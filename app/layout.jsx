@@ -27,7 +27,7 @@ export const metadata = {
       "민족사관고등학교 재학생 및 졸업생으로 이루어진 적정기술 해외봉사 동아리입니다.",
     images: [
       {
-        url: "/images/Ongdalsam.png",
+        url: "https://ongdalsam.store/images/logo blue.svg",
         width: 1200,
         height: 630,
         alt: "민족사관고등학교 옹달샘 대표 이미지",
