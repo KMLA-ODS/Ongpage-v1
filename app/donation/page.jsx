@@ -24,8 +24,8 @@ const Donation = () => {
 
           {/* 후원 */}
 
-          <div className="flex flex-row flex-wrap gap-5 xl:gap-[46px] justify-start xl:justify-center">
-            <div className="w-[45%] max-w-[220px] h-[220px] md:h-[280px] md:w-[30%] md:max-w-[280px] xl:max-w-[300px] xl:h-[300px] xl:w-[300px] relative">
+          <div className="flex flex-row flex-wrap gap-3 md:gap-5 xl:gap-[46px] justify-between xl:justify-center">
+            <div className="w-[48%] h-[220px] sm:w-[36%] md:h-[280px] xl:h-[300px] xl:w-[300px] relative">
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNfm5kMxWcY8FXYsV-nfKW6LGUFZ8ZA4PKI4962aFyjqqWag/viewform">
                 <div className=" absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
                   <h2 className=" z-20 font-bold text-[18px] text-white">
@@ -40,7 +40,7 @@ const Donation = () => {
                 objectFit="cover" // 이미지가 부모 요소에 꽉 차도록
               />
             </div>
-            <div className="w-[45%] max-w-[220px] h-[220px] md:h-[280px] md:w-[30%] md:max-w-[280px] xl:max-w-[300px] xl:h-[300px] xl:w-[300px] relative">
+            <div className="w-[48%] h-[220px] md:h-[280px] sm:w-[61%] xl:h-[300px] xl:w-[300px] relative">
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNfm5kMxWcY8FXYsV-nfKW6LGUFZ8ZA4PKI4962aFyjqqWag/viewform">
                 <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 hover:bg-opacity-50 z-10 flex justify-center items-center">
                   <h2 className=" z-20 font-bold text-[18px] text-white">
@@ -55,7 +55,7 @@ const Donation = () => {
                 objectFit="cover"
               />
             </div>
-            <div className="w-[45%] max-w-[220px] h-[220px] md:h-[280px] md:w-[30%] md:max-w-[280px] xl:max-w-[300px] xl:h-[300px] xl:w-[300px] relative">
+            <div className="w-[100%] h-[220px] md:h-[280px] xl:max-w-[300px] xl:h-[300px] xl:w-[300px] relative">
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNfm5kMxWcY8FXYsV-nfKW6LGUFZ8ZA4PKI4962aFyjqqWag/viewform">
                 <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 hover:bg-opacity-40 z-10 flex justify-center items-center">
                   <h2 className=" z-20 font-bold text-[18px] text-white">
