@@ -18,6 +18,49 @@ const ActivitySwiper = dynamic(() => import("../components/ActivitySwiper"), {
   ssr: false,
 });
 
+const slides = [
+  {
+    image: "/images/Story0.jpg",
+    link: "https://www.instagram.com/p/DBVqxdSzvDU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    alt: "story 0",
+  },
+  {
+    image: "/images/Story1.jpg",
+    link: "https://www.instagram.com/p/C99F5w3BJ20/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    alt: "story 1",
+  },
+  {
+    image: "/images/Story2.jpg",
+    link: "https://www.instagram.com/p/C99D2Vuhmc2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    alt: "story 2",
+  },
+  {
+    image: "/images/Story3.jpg",
+    link: "https://www.instagram.com/p/C9we_zOBqW8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    alt: "story 3",
+  },
+  {
+    image: "/images/Story4.jpg",
+    link: "https://www.instagram.com/p/Ck2-X5yBVom/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    alt: "story 4",
+  },
+  {
+    image: "/images/Story5.jpg",
+    link: "https://www.instagram.com/p/C9skQSDzUuv/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    alt: "story 5",
+  },
+  {
+    image: "/images/Story6.jpg",
+    link: "https://www.instagram.com/p/C9skcPdTEV0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    alt: "story 6",
+  },
+  {
+    image: "/images/Story7.jpg",
+    link: "https://www.instagram.com/p/Ch6_UOSJJ3m/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    alt: "story 7",
+  },
+];
+
 const Home = () => {
   return (
     <section className="mb-16 xl:mb-36">
@@ -59,7 +102,7 @@ const Home = () => {
         </div>
 
         {/* Swiper Component */}
-        <SwiperComponent />
+        <SwiperComponent slides={slides} height="300px" />
 
         {/* numbers */}
         <div className="w-full mt-[40px] xl:mt-[140px]">

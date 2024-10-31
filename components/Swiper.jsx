@@ -7,42 +7,12 @@ import "swiper/css/pagination";
 
 import Image from "next/image";
 
-const slides = [
-  {
-    image: "/images/Story0.jpg",
-    link: "https://www.instagram.com/p/DBVqxdSzvDU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-  },
-  {
-    image: "/images/Story1.jpg",
-    link: "https://www.instagram.com/p/C99F5w3BJ20/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-  },
-  {
-    image: "/images/Story2.jpg",
-    link: "https://www.instagram.com/p/C99D2Vuhmc2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-  },
-  {
-    image: "/images/Story3.jpg",
-    link: "https://www.instagram.com/p/C9we_zOBqW8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-  },
-  {
-    image: "/images/Story4.jpg",
-    link: "https://www.instagram.com/p/Ck2-X5yBVom/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-  },
-  {
-    image: "/images/Story5.jpg",
-    link: "https://www.instagram.com/p/C9skQSDzUuv/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-  },
-  {
-    image: "/images/Story6.jpg",
-    link: "https://www.instagram.com/p/C9skcPdTEV0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-  },
-  {
-    image: "/images/Story7.jpg",
-    link: "https://www.instagram.com/p/Ch6_UOSJJ3m/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-  },
-];
-
-const SwiperComponent = () => {
+const SwiperComponent = ({
+  slides = [], // 이미지 배열을 props로 받음
+  height = "300px", // 기본 높이
+  useLinks = true,
+  useNav = true,
+}) => {
   return (
     <div className="relative">
       {/* Swiper */}
@@ -51,7 +21,7 @@ const SwiperComponent = () => {
         slidesPerView={1.2} // 한 번에 1.2개의 슬라이드가 보이게 설정
         modules={[Navigation, Autoplay]}
         autoplay={{
-          delay: 3000, // 4초마다 전환
+          delay: 3000, // 3초마다 전환
           disableOnInteraction: false, // 상호작용해도 자동재생 유지
         }}
         loop={true}
@@ -60,25 +30,27 @@ const SwiperComponent = () => {
           nextEl: ".custom-next", // 커스텀 next 버튼 클래스명
         }}
         breakpoints={{
-          640: {
-            slidesPerView: 1.2, // 모바일 화면에서 한 번에 1.2개의 슬라이드
-          },
-          768: {
-            slidesPerView: 2.2, // 태블릿 화면에서 한 번에 2.2개의 슬라이드
-          },
-          1024: {
-            slidesPerView: 3.2, // 데스크탑 화면에서 한 번에 3.2개의 슬라이드
-          },
-          1280: {
-            slidesPerView: 4.2, // 큰 화면에서 한 번에 4.2개의 슬라이드
-          },
+          640: { slidesPerView: 1.2 },
+          768: { slidesPerView: 2.2 },
+          1024: { slidesPerView: 3.2 },
+          1280: { slidesPerView: 4.2 },
         }}
-        className="relative h-[335px]" // 슬라이드 높이 줄임
+        className="relative h-[335px]"
       >
-        {slides.map(({ image, link }, index) => (
+        {slides.map(({ image, link, alt }, index) => (
           <SwiperSlide key={index}>
-            <div className="w-full h-[300px] object-cover">
-              <a href={link}>
+            <div className="w-full" style={{ height }}>
+              {useLinks ? (
+                <a href={link}>
+                  <Image
+                    src={image}
+                    alt={`ongdalsam story ${index}`}
+                    width={1080}
+                    height={1080}
+                    className="rounded-[10px]"
+                  />
+                </a>
+              ) : (
                 <Image
                   src={image}
                   alt={`ongdalsam story ${index}`}
@@ -86,7 +58,7 @@ const SwiperComponent = () => {
                   height={1080}
                   className="rounded-[10px]"
                 />
-              </a>
+              )}
             </div>
           </SwiperSlide>
         ))}

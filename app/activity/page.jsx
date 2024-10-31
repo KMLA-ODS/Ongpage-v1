@@ -3,16 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import SwiperComponent from "../../components/Swiper";
+
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
 } from "../../components/ui/tabs";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { image } from "framer-motion/client";
 
 const projects = [
   {
@@ -92,45 +90,14 @@ const Activity = () => {
                 <div className="mt-[50px]">tech</div>
               </TabsContent>
               <TabsContent value="fd">
-                <div className="w-full flex flex-col items-center">
-                  <h2 className="pt-[89px] font-semibold text-[20px] xl:text-[25px] xl:pt-[65px] text-center">
-                    옹달샘이 크라우드 펀딩과 교내 모금행사를 통해<br></br> 모은
-                    수익 <span className="text-primary font-bold">전부는</span>{" "}
-                    위생용품 지원과 가람정수기 보급에 사용됩니다.{" "}
-                  </h2>
-                  <div className="flex gap-3.5 mt-10">
-                    <div className="w-[300px] h-[350px] relative">
-                      <Image
-                        src="/images/fd-1.JPG"
-                        alt={`ongdalsam fundraising-1`}
-                        layout="fill"
-                        objectFit="cover"
-                      />
-                    </div>
-                    <div className="w-[300px] h-[350px] relative">
-                      <Image
-                        src="/images/fd-2.JPG"
-                        alt={`ongdalsam fundraising-2`}
-                        layout="fill"
-                        objectFit="cover"
-                      />
-                    </div>
-                    <div className="w-[300px] h-[350px] relative">
-                      <Image
-                        src="/images/fd-3.JPG"
-                        alt={`ongdalsam fundraising-3`}
-                        layout="fill"
-                        objectFit="cover"
-                      />
-                    </div>
-                    <div className="w-[300px] h-[350px] relative">
-                      <Image
-                        src="/images/fd-4.JPG"
-                        alt={`ongdalsam fundraising-4`}
-                        layout="fill"
-                        objectFit="cover"
-                      />
-                    </div>
+                <div className="container mx-auto h-full">
+                  <div className="w-full flex flex-col items-center mb-10">
+                    <h2 className="pt-[89px] font-semibold text-[20px] xl:text-[25px] xl:pt-[65px] text-center">
+                      옹달샘이 크라우드 펀딩과 교내 모금행사를 통해<br></br>{" "}
+                      모은 수익{" "}
+                      <span className="text-primary font-bold">전부는</span>{" "}
+                      위생용품 지원과 가람정수기 보급에 사용됩니다.{" "}
+                    </h2>
                   </div>
                 </div>
               </TabsContent>

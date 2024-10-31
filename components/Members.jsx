@@ -101,12 +101,11 @@ export function Members() {
               {wave.person.map((member, i) => (
                 <figure key={i} className="text-center">
                   {/* Circular Image */}
-                  <div className="w-[130px] h-[130px] rounded-full overflow-hidden mx-auto mb-[27px]">
+                  <div className="w-[130px] h-[130px] rounded-full overflow-hidden mx-auto mb-[27px] relative">
                     <Image
                       src={member.image}
                       alt={member.name}
-                      width={130}
-                      height={130}
+                      fill
                       className="object-cover"
                     />
                   </div>
