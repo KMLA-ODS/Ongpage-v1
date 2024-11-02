@@ -2,7 +2,6 @@
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import Image from "next/image";
-import Link from "next/link";
 
 const info = [
   {
