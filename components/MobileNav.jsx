@@ -1,10 +1,8 @@
 "use client";
 
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
-import { usePathname } from "next/navigation";
 import { Button } from "./ui/button";
 
-import Image from "next/image";
 import Link from "next/link";
 import { CiMenuBurger } from "react-icons/ci";
 

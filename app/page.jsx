@@ -5,7 +5,6 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../components/ui/button";
 
 // Dynamic Imports (코드 스플리팅을 통해 초기 로드 시간을 줄임)
 const Stats = dynamic(() => import("../components/Stats"), {
