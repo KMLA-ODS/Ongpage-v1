@@ -179,8 +179,9 @@ const About = () => {
                     문제의식을 갖습니다.
                   </h2>
                   <p className="font-light text-gray-600 text-[15px] mt-2 text-left xl:text-left xs:text-[16px] xl:font-normal xl:text-[18px]">
-                    2014년 이후 지금까지 다양한 국가와 지역에 맞는 정수기를{" "}
-                    <br></br> 직접 연구 · 개발하여 현지에 도입해왔습니다.
+                    2014년 이후 지금까지 다양한 국가와 지역에 맞는{" "}
+                    <br className="xl:hidden"></br> 정수기를 직접 연구 ·
+                    개발하여 현지에 도입했습니다.
                   </p>
                 </div>
                 <ScrollAreaHorizontalDemo></ScrollAreaHorizontalDemo>
@@ -433,12 +434,18 @@ const About = () => {
                     <Image
                       src="/images/Captain.jpeg"
                       alt="ongdalsam captain"
-                      width={335}
-                      height={335}
+                      width={1420}
+                      height={1420}
                       className="object-cover h-[100%] w-[100%] rounded-[3%] xl:rounded-[50%]"
                     ></Image>
                   </div>
                 </div>
+
+                <div className="my-[40px] xl:my-[54px] flex justify-center">
+                  {" "}
+                  <div className="w-[35px] h-[3px] xl:w-[47px]  bg-primary"></div>
+                </div>
+
                 <div className="w-full flex flex-col-reverse xl:flex-row-reverse  pt-6 justify-between">
                   <div className="text-right mt-4 xl:w-[50%] xl:pl-8">
                     <h2 className="font-bold text-[18px] mb-8 xl:text-[25px]">
@@ -473,12 +480,12 @@ const About = () => {
                       옹달샘 28기 차장 <span className="font-bold">추연수</span>
                     </h3>
                   </div>
-                  <div className="w-[100%] h-[405px] xl:w-[50%] xl:h-[620px]">
+                  <div className="w-[100%] h-[405px] xl:w-[50%] xl:h-[620px] relative">
                     <Image
                       src="/images/Vice-Captain.png"
                       alt="ongdalsam vice captain"
-                      width={335}
-                      height={335}
+                      width={1400}
+                      height={1400}
                       className="object-cover h-[100%] w-[100%] rounded-[3%] xl:rounded-[50%]"
                     ></Image>
                   </div>
