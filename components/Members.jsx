@@ -65,13 +65,18 @@ const members = [
         position: "Vice Captain",
         image: "/images/seowonlee.png",
       },
+      {
+        name: "Somin Lee",
+        position: "Vice Captain",
+        image: "/images/sominlee.png",
+      },
+
       { name: "Minju Kim", position: "Member", image: "/images/minjukim.png" },
       {
         name: "Jungmin Woo",
         position: "Member",
         image: "/images/jungminwoo.png",
       },
-      { name: "Somin Lee", position: "Member", image: "/images/sominlee.png" },
       { name: "Jeong Lee", position: "Member", image: "/images/jeonglee.png" },
       {
         name: "Junseong Park",

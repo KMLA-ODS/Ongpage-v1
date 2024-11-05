@@ -62,7 +62,7 @@ const ActivitySwiper = () => {
           <Link href={"/activity"}>
             <Button
               size="lg"
-              className="bg-primary rounded-[5px] text-[15px] font-medium my-6 xl:my-8 ml-1"
+              className="bg-primary rounded-[5px] text-[18px] font-medium my-6 xl:my-8 ml-1"
             >
               더 알아보기
             </Button>{" "}

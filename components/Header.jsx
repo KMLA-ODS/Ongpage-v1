@@ -13,7 +13,7 @@ const Header = () => {
   const pathname = usePathname();
   return (
     <header
-      className={`py-1 lg:py-2 xl:py-4 w-[100%] z-10 ${
+      className={`py-1 lg:py-2 xl:py-4 w-[100%] z-40 ${
         pathname === "/"
           ? "bg-transparent text-white absolute"
           : "bg-white text-black"

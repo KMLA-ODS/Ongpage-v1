@@ -175,13 +175,12 @@ const About = () => {
                 {/* history - 2 */}
                 <div className="mt-[80px] xl:mt-[100px] xl:mb-[40px]">
                   <h2 className="font-bold text-[18px] text-left xl:text-left xl:text-[35px]">
-                    라오스, 베트남, 캄보디아 등<br></br> 다양한 국가에서
-                    봉사활동을 전개합니다.
+                    라오스, 베트남, 캄보디아 등<br></br> 전지구적 식수문제에
+                    문제의식을 갖습니다.
                   </h2>
-                  <p className="font-light text-gray-600 text-[15px] mt-2 text-left xl:text-left xs:text-[16px] xl:font-normal">
-                    2023년, 코로나 19 팬데믹 이후 라오스 방비엥에서 <br></br>
-                    멤브레인 정수기 설치와 위생교육을 재개했습니다.<br></br>{" "}
-                    옹달샘은 언제나 지속 가능한 발전을 위해 노력합니다.
+                  <p className="font-light text-gray-600 text-[15px] mt-2 text-left xl:text-left xs:text-[16px] xl:font-normal xl:text-[18px]">
+                    2014년 이후 지금까지 다양한 국가와 지역에 맞는 정수기를{" "}
+                    <br></br> 직접 연구 · 개발하여 현지에 도입해왔습니다.
                   </p>
                 </div>
                 <ScrollAreaHorizontalDemo></ScrollAreaHorizontalDemo>
@@ -215,7 +214,7 @@ const About = () => {
                           </Link>
                         </div>
                       </div>
-                      <div className="w-full xl:w-[1240px] h-[370px] relative xl:mt-[50px]">
+                      <div className="w-full xl:w-[1240px] h-[400px] relative xl:mt-[50px]">
                         <Image
                           src="/images/oversees-volunteer.webp"
                           alt="해외봉사"
@@ -291,8 +290,8 @@ const About = () => {
                     옹달샘의 정신
                   </h2>
                   <p className="text-center pt-4 pb-8 xl:text-[18px] xl:pt-4 xl:pb-10">
-                    개발도상국 아이들을 위해 힘차게 달려온 10년<br></br> 더욱
-                    발전하는 옹달샘이 되겠습니다
+                    개발도상국 아이들을 위해 힘차게 달려온 10년,<br></br>{" "}
+                    앞으로도 발전하는 옹달샘이 되겠습니다
                   </p>
                   <div className="w-full flex flex-col xl:flex-row items-center gap-5 justify-center text-left text-white">
                     <div className="w-[100%] h-[200px] xl:h-[400px] xl:w-[400px] relative">
@@ -336,10 +335,10 @@ const About = () => {
                   <div className="w-full flex flex-col xl:flex-row items-center justify-center gap-6 xl:gap-16">
                     {/* first circle */}
 
-                    <div className="w-full h-[110px] border-2 border-gray-250 rounded-[10px] flex xl:w-[300px] xl:h-[300px] xl:rounded-[50%] relative">
+                    <div className="w-full h-[110px] border-2 border-gray-250 rounded-[10px] flex xl:w-[300px] xl:h-[300px] xl:rounded-[50%] relative ">
                       {/* number */}
 
-                      <div className="h-full w-[30%] flex justify-center items-center  ">
+                      <div className="h-full w-[30%] flex justify-center items-center xl:w-[100%] xl:h-0 xl:absolute xl:top-[40%] ">
                         <span className="text-primary text-[30px] font-semibold ">
                           01
                         </span>
@@ -347,8 +346,8 @@ const About = () => {
 
                       {/* text */}
 
-                      <div className="h-full w-[70%] flex justify-start xl:justify-center items-center   ">
-                        <h3 className="text-[16px] font-medium">
+                      <div className="h-full w-[70%] flex justify-start xl:justify-center items-center xl:w-[100%] xl:h-0 xl:absolute xl:top-[55%] ">
+                        <h3 className="text-[16px] font-medium xl:text-[19px] xl:font-semibold">
                           학생 중심의 자주적 봉사
                         </h3>
                       </div>
@@ -356,29 +355,38 @@ const About = () => {
 
                     {/* second circle */}
 
-                    <div className="w-full h-[110px] border-2 border-gray-250 rounded-[10px] flex xl:w-[300px] xl:h-[300px] xl:rounded-[50%]">
-                      <div className="h-full w-[30%] flex justify-center items-center">
+                    <div className="w-full h-[110px] border-2 border-gray-250 rounded-[10px] flex xl:w-[300px] xl:h-[300px] xl:rounded-[50%] relative ">
+                      {/* number */}
+
+                      <div className="h-full w-[30%] flex justify-center items-center xl:w-[100%] xl:h-0 xl:absolute xl:top-[40%] ">
                         <span className="text-primary text-[30px] font-semibold ">
                           02
                         </span>
                       </div>
 
-                      <div className="h-full w-[70%] flex justify-start xl:justify-center items-center ">
-                        <h3 className="text-[16px] font-medium">
-                          적정기술의 활용
+                      {/* text */}
+
+                      <div className="h-full w-[70%] flex justify-start xl:justify-center items-center xl:w-[100%] xl:h-0 xl:absolute xl:top-[55%] ">
+                        <h3 className="text-[16px] font-medium xl:text-[19px] xl:font-semibold">
+                          적정기술의 활용{" "}
                         </h3>
                       </div>
                     </div>
-                    <div className="w-full h-[110px] border-2 border-gray-250 rounded-[10px] flex xl:w-[300px] xl:h-[300px] xl:rounded-[50%]">
-                      <div className="h-full w-[30%] flex justify-center items-center">
+
+                    <div className="w-full h-[110px] border-2 border-gray-250 rounded-[10px] flex xl:w-[300px] xl:h-[300px] xl:rounded-[50%] relative ">
+                      {/* number */}
+
+                      <div className="h-full w-[30%] flex justify-center items-center xl:w-[100%] xl:h-0 xl:absolute xl:top-[40%] ">
                         <span className="text-primary text-[30px] font-semibold ">
                           03
                         </span>
                       </div>
 
-                      <div className="h-full w-[70%] flex justify-start  xl:justify-center items-center ">
-                        <h3 className="text-[16px] font-medium">
-                          지역 주민들과의 심리적 유대
+                      {/* text */}
+
+                      <div className="h-full w-[70%] flex justify-start xl:justify-center items-center xl:w-[100%] xl:h-0 xl:absolute xl:top-[55%] ">
+                        <h3 className="text-[16px] font-medium xl:text-[19px] xl:font-semibold">
+                          지역 주민들과의 심리적 유대{" "}
                         </h3>
                       </div>
                     </div>

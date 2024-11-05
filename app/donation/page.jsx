@@ -80,7 +80,7 @@ const Donation = () => {
           {/* 웰컴*/}
 
           <h2 className="font-bold text-[20px] xl:text-[30px] text-center mt-20 mb-8">
-            후원자가 되어주시면
+            정기후원자가 되어주시면
           </h2>
 
           <div className="flex flex-col xl:flex-row gap-5 xl:gap-[46px] items-center justify-center">

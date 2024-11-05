@@ -90,15 +90,18 @@ const Activity = () => {
                 <div className="mt-[50px]">tech</div>
               </TabsContent>
               <TabsContent value="fd">
-                <div className="container mx-auto h-full">
-                  <div className="w-full flex flex-col items-center mb-10">
-                    <h2 className="pt-[89px] font-semibold text-[20px] xl:text-[25px] xl:pt-[65px] text-center">
-                      옹달샘이 크라우드 펀딩과 교내 모금행사를 통해<br></br>{" "}
-                      모은 수익{" "}
-                      <span className="text-primary font-bold">전부는</span>{" "}
-                      위생용품 지원과 가람정수기 보급에 사용됩니다.{" "}
-                    </h2>
-                  </div>
+                <div className="w-full flex flex-col  mb-10 text-left xl:text-center">
+                  <h2 className="pt-[60px] font-bold text-[20px] xl:text-[25px] xl:pt-[65px]  ">
+                    옹달샘의 영향력이 <br className="xl:hidden"></br>
+                    <span className="text-primary"> 더 멀리까지 </span>닿을 수
+                    있도록
+                  </h2>
+                  <p className=" text-[14.5px] xs:text-[16px] xl:text-[18px] ">
+                    옹달샘이 교내 모금 행사, 크라우드 펀딩 등을 통해 모은 금액
+                    전부는 <br className="hidden xl:inline"></br> 위생 물품과
+                    정수기 보급으로 <br className="xl:hidden"></br> 개발도상국
+                    아이들에게 전달됩니다.
+                  </p>
                 </div>
               </TabsContent>
             </div>

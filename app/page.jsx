@@ -62,16 +62,17 @@ const slides = [
 
 const Home = () => {
   return (
-    <section className="mb-16 xl:mb-36">
+    <section className="mb-16 xl:mb-36 relative">
       {/* banner */}
-      <div className="h-[390px] xl:h-[620px] bg-[url('/images/Home_bg.webp')] bg-cover bg-center">
-        <div className="container mx-auto h-full">
-          <div className="pt-[140px] xl:pt-[220px]">
+      <div className="h-[390px] xl:h-[620px] bg-[url('/images/Home_bg.webp')] bg-cover bg-center relative">
+        <div className="absolute inset-0 bg-black opacity-30"></div>{" "}
+        <div className="container mx-auto h-full z-20 relative">
+          <div className="pt-[140px] xl:pt-[220px] relative z-30">
             <span className="text-white xl:text-[20px] font-semibold">
               2024
             </span>
-            <h1 className="text-white mt-[15px] xl:mt-[19px] font-bold text-4xl mb-[22px] xl:text-[65px] xl:mb-[22px] xl:leading-tight  ">
-              민족사관고등학교 <br></br> 옹달샘
+            <h1 className="text-white mt-[15px] xl:mt-[19px] font-bold text-4xl mb-[22px] xl:text-[65px] xl:mb-[22px] xl:leading-tight">
+              민족사관고등학교 <br /> 옹달샘
             </h1>
             <p className="text-white xl:text-[20px]">
               국내 유일 적정기술 해외봉사 동아리
