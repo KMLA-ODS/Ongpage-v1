@@ -12,6 +12,15 @@ body {
   position: relative;
 }
 
+/* styles/global.css */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
 .line-after::after {
   @apply absolute content-[''] left-5 lg:left-[50%] top-[20px] w-[1px] h-[100%] bg-slate-500;
 }
