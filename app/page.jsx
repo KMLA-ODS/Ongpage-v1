@@ -168,7 +168,7 @@ const Home = () => {
                 <div className="w-[120px] h-[120px]">
                   <Image
                     src="/images/kia.png"
-                    alt={`prize`}
+                    alt={`Kia`}
                     width={120}
                     height={120}
                     loading="lazy"
@@ -180,7 +180,7 @@ const Home = () => {
                 <div className="w-[120px] h-[120px]">
                   <Image
                     src="/images/koica.png"
-                    alt={`prize`}
+                    alt={`Koica`}
                     width={120}
                     height={120}
                     loading="lazy"
