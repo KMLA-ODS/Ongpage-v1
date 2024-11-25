@@ -5,7 +5,7 @@ import Image from "next/image";
 const Donation = () => {
   return (
     <section className="mb-24">
-      <div className="h-[295px] xl:h-[315px] bg-[url('/images/donationBanner.jpeg')] bg-cover bg-center">
+      <div className="h-[295px] xl:h-[315px] bg-[url('/images/donationBanner.png')] bg-cover bg-center">
         <div className="container h-full flex items-end pl-[12px] pb-[40px] lg:pl-0 lg:pb-0 lg:items-center">
           <h2 className="text-[40px] font-bold text-white">후원안내</h2>
         </div>

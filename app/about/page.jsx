@@ -292,7 +292,7 @@ const About = () => {
                   </h2>
                   <p className="text-center pt-4 pb-8 xl:text-[18px] xl:pt-4 xl:pb-10">
                     개발도상국 아이들을 위해 힘차게 달려온 10년,<br></br>{" "}
-                    앞으로도 발전하는 옹달샘이 되겠습니다
+                    앞으로도 발전하는 옹달샘이 되겠습니다.
                   </p>
                   <div className="w-full flex flex-col xl:flex-row items-center gap-5 justify-center text-left text-white">
                     <div className="w-[100%] h-[200px] xl:h-[400px] xl:w-[400px] relative">
@@ -396,7 +396,11 @@ const About = () => {
               </TabsContent>
 
               <TabsContent value="greeting">
-                <div className="w-full flex flex-col-reverse xl:flex-row  pt-[45px] xl:pt-[65px] justify-between">
+                <div className="mt-40 flex justify-center">
+                  <span className="text-[30px]">준비중입니다.</span>
+                </div>
+
+                {/* <div className="w-full flex flex-col-reverse xl:flex-row  pt-[45px] xl:pt-[65px] justify-between">
                   <div className="text-left mt-4 xl:w-[50%] xl:pr-8">
                     <h2 className="font-bold text-[18px] mb-8 xl:text-[25px] ">
                       신나는 옹달샘 이야기<br></br>
@@ -489,7 +493,7 @@ const About = () => {
                       className="object-cover h-[100%] w-[100%] rounded-[3%] xl:rounded-[50%]"
                     ></Image>
                   </div>
-                </div>
+                </div> */}
               </TabsContent>
             </div>
           </Tabs>
