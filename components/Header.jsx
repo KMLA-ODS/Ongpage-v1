@@ -36,7 +36,7 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* desktop nav */}
+        {/* desktop */}
 
         <div className="hidden xl:flex items-center gap-8">
           <Nav></Nav>
