@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
+import ActivitySwiper2 from "../../components/ActivitySwiper2";
 import SwiperComponent from "../../components/Swiper";
 
 import {
@@ -67,24 +67,73 @@ const Activity = () => {
             <div className="min-h-[70vh] w-full">
               <TabsContent value="oversees-volunteering">
                 {/* description */}
-                <div className="w-full flex flex-col items-left pt-[97px]">
-                  <h2 className=" text-[18px] xs:text-[20px] font-bold xl:text-[30px] mt-[10px] mb-[5px] text-left">
+                <div className="w-full flex flex-col items-left pt-[40px]">
+                  <h2 className=" text-[18px] sm:text-[20px] font-bold xl:text-[30px] mt-[10px] mb-[5px] text-left">
                     매년 8월 옹달샘은{" "}
                     <span className="text-primary">현장으로</span> 나섭니다.{" "}
                   </h2>
 
-                  <p className=" text-[14.5px] xs:text-[16px] xl:text-[18px] text-left ">
-                    2014년 설립된 옹달샘은
-                    <br className="xl:hidden"></br> 깨끗한 식수를 필요로 하는
-                    개발도상국 아동과 마을을 <br></br> 위해 식수 공급 및
-                    위생교육 사업과 진행하는 <br className="xl:hidden"></br>
-                    <span className="font-semibold text-primary">
+                  <p className=" text-[15px] sm:text-[16px] xl:text-[18px] text-left  text-gray-600 ">
+                    2014년 설립된 옹달샘은 깨끗한 식수를 필요로{" "}
+                    <br className="md:hidden"></br> 하는 개발도상국 아동과
+                    마을을 위해<br></br> 식수 공급 및 위생교육 사업을 진행하는{" "}
+                    <br className="md:hidden"></br>
+                    <span className="font-medium text-primary">
                       적정기술 해외봉사 동아리
                     </span>
                     입니다.
                   </p>
                 </div>
-                <div className="flex"></div>
+                <div className="flex mt-5 xl:mt-8 justify-left gap-[36px] xl:justify-between flex-col lg:flex-row">
+                  <div className="flex flex-col gap-[36px]">
+                    <div className="w-[100%] md:w-[390px] h-[180px] sm:h-[215px] relative">
+                      <Image
+                        src="/images/aboutImage1.png"
+                        alt="activityImage1"
+                        fill
+                        className="object-cover"
+                      ></Image>
+                    </div>
+                    <div className="w-[390px] h-[215px] relative hidden md:block">
+                      <Image
+                        src="/images/aboutImage2.png"
+                        alt="activityImage2"
+                        fill
+                        className="object-cover"
+                      ></Image>
+                    </div>
+                  </div>
+                  <div className="hidden xl:block">
+                    <div className="w-[350px] h-[468px] relative">
+                      <Image
+                        src="/images/aboutImage3.png"
+                        alt="activityImage3"
+                        fill
+                        className="object-cover"
+                      ></Image>
+                    </div>
+                  </div>
+                  <div className="lg:flex flex-col gap-[36px] lg:mt-0 mt-[36px] hidden">
+                    <div className="w-[390px] h-[215px] relative">
+                      <Image
+                        src="/images/aboutImage4.png"
+                        alt="activityImage4"
+                        fill
+                        className="object-cover"
+                      ></Image>
+                    </div>
+                    <div className="w-[390px] h-[215px] relative">
+                      <Image
+                        src="/images/aboutImage5.png"
+                        alt="activityImage5"
+                        fill
+                        className="object-cover"
+                      ></Image>
+                    </div>
+                  </div>
+                </div>
+
+                <ActivitySwiper2 />
               </TabsContent>
               <TabsContent value="tech">
                 <div className="mt-[50px]">준비중입니다.</div>

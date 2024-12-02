@@ -54,8 +54,8 @@ const About = () => {
                   <p className=" text-[14.5px] xs:text-[16px] xl:text-[20px] text-center mt-[54px]">
                     2014년 설립된 옹달샘은
                     <br className="xl:hidden"></br> 깨끗한 식수를 필요로 하는
-                    개발도상국 아동과 마을을 <br></br> 위해 식수 공급 및
-                    위생교육 사업과 진행하는 <br className="xl:hidden"></br>
+                    개발도상국 마을을 <br></br> 위해 식수 공급 및 위생교육
+                    사업과 진행하는 <br className="xl:hidden"></br>
                     <span className="font-semibold text-primary">
                       적정기술 해외봉사 동아리
                     </span>
@@ -200,9 +200,8 @@ const About = () => {
                             옹달샘은 베트남, 라오스 등 여러 국가에서 <br></br>
                             깨끗한 식수와 위생을 위한 봉사 활동을 진행합니다.{" "}
                             <br></br>
-                            2023년에는 코로나 이후 라오스 방비엥에서 멤브레인
-                            <br></br>
-                            정수기 설치와 위생 교육을 재개하였습니다.
+                            2023년에는 코로나 이후 라오스 방비엥에서 <br></br>{" "}
+                            멤브레인 정수기 설치와 위생교육을 재개하였습니다.
                           </p>
                         </div>
 
