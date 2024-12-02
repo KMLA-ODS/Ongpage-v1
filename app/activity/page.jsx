@@ -139,7 +139,7 @@ const Activity = () => {
                 <div className="mt-[50px]">준비중입니다.</div>
               </TabsContent>
               <TabsContent value="fd">
-                <div className="w-full flex flex-col  mb-10 text-left xl:text-center">
+                <div className="w-full flex flex-col mb-4  xl:mb-10 text-left xl:text-center">
                   <h2 className="pt-[60px] font-bold text-[20px] xl:text-[25px] xl:pt-[65px]  ">
                     옹달샘의 영향력이 <br className="xl:hidden"></br>
                     <span className="text-primary"> 더 멀리까지 </span>닿을 수
@@ -152,7 +152,26 @@ const Activity = () => {
                     아이들에게 전달됩니다.
                   </p>
                 </div>
-                <div></div>
+                <div>
+                  <div className="flex flex-col xl:flex-row gap-4">
+                    <div className="w-[100%] h-[200px] xl:w-[600px] xl:h-[400px] relative">
+                      <Image
+                        src="/images/mog1.jpg"
+                        alt="모금활동"
+                        fill
+                        className="object-cover"
+                      ></Image>
+                    </div>
+                    <div className="w-[100%] h-[200px] xl:w-[600px] xl:h-[400px] relative">
+                      <Image
+                        src="/images/tumble.jpg"
+                        alt="텀블벅"
+                        fill
+                        className="object-cover"
+                      ></Image>
+                    </div>
+                  </div>
+                </div>
               </TabsContent>
             </div>
           </Tabs>
