@@ -68,52 +68,6 @@ const Contact = () => {
                 </li>
               ))}
             </ul>
-
-            {/* Email Contact Form */}
-            <div className="flex flex-col">
-              <h2 className="font-bold text-[25px] mb-4">문의하기</h2>
-              <form className="space-y-4">
-                <div className="flex flex-col">
-                  <label className="text-lg font-semibold" htmlFor="name">
-                    이름
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-primary"
-                    placeholder="이름을 입력하세요"
-                  />
-                </div>
-                <div className="flex flex-col">
-                  <label className="text-lg font-semibold" htmlFor="email">
-                    이메일
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-primary"
-                    placeholder="이메일 주소를 입력하세요"
-                  />
-                </div>
-                <div className="flex flex-col">
-                  <label className="text-lg font-semibold" htmlFor="message">
-                    메시지
-                  </label>
-                  <textarea
-                    id="message"
-                    rows="4"
-                    className="border border-gray-300 p-3 rounded-md focus:outline-none focus:border-primary"
-                    placeholder="문의 내용을 입력하세요"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="bg-primary text-white font-bold py-3 px-5 rounded-md hover:bg-primary-dark"
-                >
-                  전송하기
-                </button>
-              </form>
-            </div>
           </div>
         </div>
       </div>

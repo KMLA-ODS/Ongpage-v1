@@ -136,7 +136,7 @@ const About = () => {
                             <span className="absolute top-0 left-0 font-bold">
                               3
                             </span>
-                            APA 선정 올해의 청소년 필란트로피스트{" "}
+                            APA 올해의 청소년 필란트로피스트{" "}
                           </li>
                         </ul>
                       </dd>
@@ -196,7 +196,7 @@ const About = () => {
                     <div className="flex flex-col items-center xl:items-start">
                       <div className="xl:flex xl:flex-row-reverse w-full">
                         <div className="xl:w-[50%] relative">
-                          <p className="font-light text-gray-600 text-[15px] sx:text-[16px] xl:text-[18px] mt-2 xl:absolute xl:top-[-55px] xl:left-0 xl:text-left">
+                          <p className="font-light text-gray-600 text-[16px] xl:text-[18px] mt-2 xl:absolute xl:top-[-55px] xl:left-0 xl:text-left">
                             옹달샘은 베트남, 라오스 등 여러 국가에서 <br></br>
                             깨끗한 식수와 위생을 위한 봉사 활동을 진행합니다.{" "}
                             <br></br>

@@ -67,8 +67,8 @@ const Activity = () => {
             <div className="min-h-[70vh] w-full">
               <TabsContent value="oversees-volunteering">
                 {/* description */}
-                {/* <div className="w-full flex flex-col items-left pt-[97px]">
-                  <h2 className=" text-[18px] xs:text-[20px] font-bold xl:text-[30px] my-[10px] text-left">
+                <div className="w-full flex flex-col items-left pt-[97px]">
+                  <h2 className=" text-[18px] xs:text-[20px] font-bold xl:text-[30px] mt-[10px] mb-[5px] text-left">
                     매년 8월 옹달샘은{" "}
                     <span className="text-primary">현장으로</span> 나섭니다.{" "}
                   </h2>
@@ -83,14 +83,14 @@ const Activity = () => {
                     </span>
                     입니다.
                   </p>
-                </div> */}
-                <div></div>
+                </div>
+                <div className="flex"></div>
               </TabsContent>
               <TabsContent value="tech">
                 <div className="mt-[50px]">준비중입니다.</div>
               </TabsContent>
               <TabsContent value="fd">
-                {/* <div className="w-full flex flex-col  mb-10 text-left xl:text-center">
+                <div className="w-full flex flex-col  mb-10 text-left xl:text-center">
                   <h2 className="pt-[60px] font-bold text-[20px] xl:text-[25px] xl:pt-[65px]  ">
                     옹달샘의 영향력이 <br className="xl:hidden"></br>
                     <span className="text-primary"> 더 멀리까지 </span>닿을 수
@@ -102,7 +102,8 @@ const Activity = () => {
                     정수기 보급으로 <br className="xl:hidden"></br> 개발도상국
                     아이들에게 전달됩니다.
                   </p>
-                </div> */}
+                </div>
+                <div></div>
               </TabsContent>
             </div>
           </Tabs>
